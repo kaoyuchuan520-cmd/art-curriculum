@@ -1,0 +1,2733 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>藝融白川 ‧ 美學地圖 | 國小藝術才能班課程美學網 - 高玉娟老師</title>
+  <meta name="description" content="嘉義市大同國小藝術才能班「藝融白川」校本彈性美學課程與三、四、六年級部訂/校訂藝術課程架構網站，由高玉娟老師設計與教學。">
+  
+  <!-- Google Fonts: Noto Serif TC, Noto Sans TC, Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- html2pdf.js for Client-Side PDF Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#FDFBF7',
+            sand: '#F4EFE6',
+            ink: '#1A1A1A',
+            crimson: '#B83232',
+            lush: '#2A6F44',
+            celadon: '#2C7A7B',
+            gold: '#C5A059',
+            goldlight: '#EADBB6',
+          },
+          fontFamily: {
+            serif: ['"Noto Serif TC"', 'serif'],
+            sans: ['"Noto Sans TC"', 'sans-serif'],
+            display: ['"Playfair Display"', 'serif'],
+          },
+          backgroundImage: {
+            'ink-gradient': 'linear-gradient(135deg, rgba(253,251,247,0.95) 0%, rgba(244,239,230,0.9) 100%)',
+            'gold-gradient': 'linear-gradient(135deg, #C5A059 0%, #EADBB6 100%)',
+            'crimson-gradient': 'linear-gradient(135deg, #B83232 0%, #8B2020 100%)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Styling for Oriental Ink Aesthetic */
+    body {
+      background-color: #FDFBF7;
+      color: #1A1A1A;
+      font-family: 'Noto Sans TC', sans-serif;
+      background-image: radial-gradient(#E5DFD3 0.75px, transparent 0.75px);
+      background-size: 24px 24px;
+    }
+
+    .font-serif-title {
+      font-family: 'Noto Serif TC', serif;
+    }
+
+    /* Ink Seal Stamp Effect */
+    .ink-stamp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #B83232;
+      color: #B83232;
+      border-radius: 6px;
+      font-weight: 700;
+      font-family: 'Noto Serif TC', serif;
+      box-shadow: inset 0 0 4px rgba(184, 50, 50, 0.2);
+    }
+
+    /* Glassmorphism Navigation */
+    .glass-nav {
+      background: rgba(253, 251, 247, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(197, 160, 89, 0.25);
+    }
+
+    /* Card Micro Animations */
+    .course-card {
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(197, 160, 89, 0.2);
+    }
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px -8px rgba(44, 122, 123, 0.12), 0 4px 12px rgba(184, 50, 50, 0.08);
+      border-color: rgba(197, 160, 89, 0.6);
+    }
+
+    /* Modal Animation */
+    .modal-backdrop {
+      background-color: rgba(26, 26, 26, 0.65);
+      backdrop-filter: blur(6px);
+    }
+
+    /* Golden Spiral Decorative Line */
+    .golden-line {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #C5A059, transparent);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4EFE6;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5A059;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #B83232;
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800 leading-relaxed selection:bg-goldlight selection:text-crimson">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="ink-stamp w-11 h-11 text-lg group-hover:scale-105 transition-transform duration-300">
+            白川
+          </div>
+          <div>
+            <div class="font-serif-title font-bold text-xl sm:text-2xl text-ink tracking-tight flex items-center gap-2">
+              藝融白川 <span class="text-xs font-normal px-2 py-0.5 rounded bg-sand text-crimson border border-crimson/20">美學地圖</span>
+            </div>
+            <div class="text-xs text-gray-500 font-sans tracking-wide">嘉義市大同國小藝術才能班 ‧ 高玉娟老師課程設計</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-5 font-serif-title font-medium text-sm text-gray-700">
+          <a href="#roadmap" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">6道縱向地圖</a>
+          <a href="#orientations" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">全人教育3取向</a>
+          <a href="#courses" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">年級課程單元</a>
+          <a href="#chen-quiz" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson font-bold text-amber-800">🎨 陳澄波測驗</a>
+          <a href="#assessment" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">雙軌評量特色</a>
+          <a href="#quiz-section" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson font-bold text-crimson">🎯 實務自評測驗</a>
+          <a href="#posters" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">海報圖檔特展</a>
+        </nav>
+
+        <!-- CTA & Mobile Toggle -->
+        <div class="flex items-center space-x-3">
+          <a href="#courses" class="hidden sm:inline-flex items-center px-4 py-2 text-xs font-medium text-white bg-crimson hover:bg-crimson/90 rounded-full shadow-sm hover:shadow transition-all">
+            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            探索課程單元
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-gray-700 hover:text-crimson hover:bg-sand focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-paper/95 border-b border-gold/30 px-4 pt-2 pb-6 space-y-3 font-serif-title text-base">
+      <a href="#roadmap" class="block py-2 text-gray-800 hover:text-crimson">6道縱向地圖</a>
+      <a href="#g3-section" class="block py-2 text-gray-800 hover:text-crimson">三年級 生活美學</a>
+      <a href="#g4-section" class="block py-2 text-gray-800 hover:text-crimson">四年級 造形色彩</a>
+      <a href="#g6-section" class="block py-2 text-gray-800 hover:text-crimson">六年級 造形色彩</a>
+      <a href="#assessment" class="block py-2 text-gray-800 hover:text-crimson">雙軌評量與特色</a>
+      <a href="#posters" class="block py-2 text-gray-800 hover:text-crimson">海報與圖檔特展</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <!-- Decorative Ink Splash SVG Background -->
+    <div class="absolute inset-0 pointer-events-none opacity-20 flex items-center justify-center">
+      <svg class="w-[800px] h-[800px] text-gold/30" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M42.7,-62.6C54.8,-53.4,63.7,-40.5,69.5,-26.2C75.3,-11.9,78,3.7,74.1,18.3C70.2,32.9,59.7,46.4,46.5,56.1C33.3,65.8,17.4,71.7,0.8,70.6C-15.8,69.5,-30.8,61.4,-44.1,51.1C-57.4,40.8,-69,28.3,-72.8,13.5C-76.6,-1.3,-72.6,-18.4,-63.9,-31.6C-55.2,-44.8,-41.8,-54.1,-28.1,-62.1C-14.4,-70.1,0.4,-76.8,14.8,-74.8C29.2,-72.8,30.6,-71.8,42.7,-62.6Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-8 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sand border border-gold/40 text-xs text-ink font-serif-title">
+            <span class="w-2 h-2 rounded-full bg-crimson animate-pulse"></span>
+            國小藝術才能班 ‧ 校本彈性與部訂美學課程
+          </div>
+
+          <h1 class="font-serif-title text-4xl sm:text-5xl lg:text-6xl font-black text-ink tracking-tight leading-tight">
+            藝融白川 <span class="text-crimson">‧</span> 美學地圖
+            <span class="block text-2xl sm:text-3xl lg:text-4xl font-normal text-gray-700 mt-2 font-display italic">
+              Aesthetics in Life & Form-Color
+            </span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-gray-700 leading-relaxed font-sans max-w-3xl">
+            以「藝融白川」校本彈性美學課程為核心軸線，串聯國小三年級、四年級與六年級之部訂與校訂藝術課程。融會東方墨韻、現代藝術與生活覺察，開啟孩子的感官美學視野。
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <div class="flex items-center gap-3 bg-white/80 backdrop-blur px-4 py-2.5 rounded-xl border border-gold/30 shadow-sm">
+              <div class="w-10 h-10 rounded-full bg-crimson/10 flex items-center justify-center text-crimson font-serif-title font-bold text-lg">
+                高
+              </div>
+              <div>
+                <div class="text-xs text-gray-500 font-sans">課程設計與教學者</div>
+                <div class="font-serif-title font-bold text-gray-900">高玉娟 老師</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 bg-white/80 backdrop-blur px-4 py-2.5 rounded-xl border border-gold/30 shadow-sm">
+              <div class="w-10 h-10 rounded-full bg-celadon/10 flex items-center justify-center text-celadon font-serif-title font-bold text-lg">
+                嘉
+              </div>
+              <div>
+                <div class="text-xs text-gray-500 font-sans">教學場域</div>
+                <div class="font-serif-title font-bold text-gray-900">嘉義市大同國小 藝術才能班</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#roadmap" class="inline-flex items-center px-6 py-3.5 rounded-xl text-white bg-crimson hover:bg-crimson/90 font-serif-title font-medium shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+              🗺️ 觀看 6 道縱向地圖
+            </a>
+            <a href="#courses" class="inline-flex items-center px-6 py-3.5 rounded-xl text-ink bg-sand hover:bg-goldlight/60 border border-gold/50 font-serif-title font-medium shadow-sm hover:shadow transition-all">
+              🎨 瀏覽年級單元
+            </a>
+            <a href="#posters" class="inline-flex items-center px-6 py-3.5 rounded-xl text-celadon bg-white hover:bg-sand border border-celadon/40 font-serif-title font-medium shadow-sm hover:shadow transition-all">
+              📜 查看課程海報圖檔
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Decorative Graphic Card -->
+        <div class="lg:col-span-4">
+          <div class="relative mx-auto max-w-sm rounded-2xl bg-white p-6 shadow-xl border border-gold/40 space-y-6">
+            <div class="golden-line"></div>
+            
+            <div class="text-center space-y-2">
+              <div class="text-xs font-serif-title text-gold font-semibold uppercase tracking-widest">Aesthetic Core Values</div>
+              <h3 class="font-serif-title text-2xl font-bold text-ink">三大核心美學主軸</h3>
+            </div>
+
+            <div class="space-y-4">
+              <div class="p-3.5 rounded-xl bg-sand/60 border border-crimson/20 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-crimson text-white flex items-center justify-center font-bold text-sm">文</span>
+                <div>
+                  <div class="font-serif-title font-bold text-sm text-crimson">文化 Culture</div>
+                  <div class="text-xs text-gray-600">陳澄波、鄉土情感、同安船、故宮三遠</div>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-sand/60 border border-lush/20 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-lush text-white flex items-center justify-center font-bold text-sm">生</span>
+                <div>
+                  <div class="font-serif-title font-bold text-sm text-lush">生態 Ecology</div>
+                  <div class="text-xs text-gray-600">植物寫生、春之色彩、諸羅微型聯展</div>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-sand/60 border border-celadon/20 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-lg bg-celadon text-white flex items-center justify-center font-bold text-sm">自</span>
+                <div>
+                  <div class="font-serif-title font-bold text-sm text-celadon">自我 Self</div>
+                  <div class="text-xs text-gray-600">SEL 冰山覺察、感官體驗、自傳式夢境</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2 text-center">
+              <span class="text-xs text-gray-500 font-sans italic">貫穿 Lowenfeld 感官創造與當代美學思維</span>
+            </div>
+            
+            <div class="golden-line"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: 6道縱向課程地圖 (TIMELINE ROADMAP) -->
+  <section id="roadmap" class="py-20 bg-sand/50 border-y border-gold/20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="inline-block px-3 py-1 rounded-full bg-white border border-gold/30 text-xs font-serif-title text-crimson font-medium">
+          【藝融白川】縱向美學地圖
+        </div>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-ink">
+          一至六年級 6 道縱向美學課程地圖
+        </h2>
+        <p class="text-gray-600 text-base">
+          以生命成長與美的探索為縱軸，貫穿低、中、高年級校本彈性與藝術特色單元
+        </p>
+      </div>
+
+      <!-- Roadmap Grid (Vertical Line / Steps) -->
+      <div class="relative">
+        <!-- Center Connecting Line (Desktop) -->
+        <div class="hidden lg:block absolute left-1/2 top-8 bottom-8 w-1 bg-gradient-to-b from-crimson via-gold to-celadon -translate-x-1/2 opacity-30"></div>
+
+        <div class="space-y-8">
+          
+          <!-- Grade 1 -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-5 lg:text-right">
+              <div class="bg-white p-6 rounded-2xl border border-gold/30 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between lg:justify-end gap-3 mb-2">
+                  <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-amber-100 text-amber-800">一年級 ‧ 2節</span>
+                  <span class="text-xs text-gray-500 font-serif-title">觸（木）</span>
+                </div>
+                <h3 class="font-serif-title text-xl font-bold text-ink mb-1">觸（木）｜自我與自然</h3>
+                <p class="text-sm text-gray-600">從觸覺與自然材質切入，探索自我與自然環境的最初連結。</p>
+                <div class="mt-3 text-xs text-crimson font-serif-title">代表藝術家：郭東榮、Andy Goldsworthy、O'Keeffe</div>
+              </div>
+            </div>
+            <div class="lg:col-span-2 flex justify-center">
+              <div class="w-12 h-12 rounded-full bg-crimson text-white font-serif-title font-bold text-lg flex items-center justify-center shadow-md ring-4 ring-paper">
+                1
+              </div>
+            </div>
+            <div class="lg:col-span-5 text-gray-500 text-xs font-serif-title hidden lg:block">
+              核心議題：自我 ‧ 自然
+            </div>
+          </div>
+
+          <!-- Grade 2 -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-5 text-gray-500 text-xs font-serif-title hidden lg:block text-right">
+              核心議題：自我 ‧ 關懷他人 ‧ 家鄉
+            </div>
+            <div class="lg:col-span-2 flex justify-center">
+              <div class="w-12 h-12 rounded-full bg-amber-600 text-white font-serif-title font-bold text-lg flex items-center justify-center shadow-md ring-4 ring-paper">
+                2
+              </div>
+            </div>
+            <div class="lg:col-span-5">
+              <div class="bg-white p-6 rounded-2xl border border-gold/30 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between gap-3 mb-2">
+                  <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-amber-100 text-amber-800">二年級 ‧ 4節</span>
+                  <span class="text-xs text-gray-500 font-serif-title">玩（味）</span>
+                </div>
+                <h3 class="font-serif-title text-xl font-bold text-ink mb-1">玩（味）｜關懷與家鄉</h3>
+                <p class="text-sm text-gray-600">透過遊戲與味覺觀察，拓展對他人與家鄉土地的關懷。</p>
+                <div class="mt-3 text-xs text-crimson font-serif-title">代表藝術家：陳銀輝、Matisse、奈良美智</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grade 3 (Highlighted) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-5 lg:text-right">
+              <div class="bg-white p-6 rounded-2xl border-2 border-crimson/40 shadow-md hover:shadow-lg transition-all relative overflow-hidden">
+                <span class="absolute top-0 right-0 bg-crimson text-white text-[10px] px-3 py-1 font-serif-title rounded-bl-lg font-bold">重點校訂課程</span>
+                <div class="flex items-center justify-between lg:justify-end gap-3 mb-2">
+                  <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-crimson/10 text-crimson">三年級 ‧ 6節</span>
+                  <span class="text-xs text-crimson font-serif-title font-bold">（水）流動</span>
+                </div>
+                <h3 class="font-serif-title text-xl font-bold text-ink mb-1">（水）流動｜生活美學</h3>
+                <p class="text-sm text-gray-600">水墨擴散、陳澄波洋紅、梵谷色彩流動與 Notan 明暗黑白空間。</p>
+                <div class="mt-3 text-xs text-crimson font-serif-title font-bold">代表藝術家：陳澄波、Keith Haring、梵谷、席德進、鄭問</div>
+              </div>
+            </div>
+            <div class="lg:col-span-2 flex justify-center">
+              <div class="w-14 h-14 rounded-full bg-crimson text-white font-serif-title font-black text-xl flex items-center justify-center shadow-lg ring-4 ring-crimson/20">
+                3
+              </div>
+            </div>
+            <div class="lg:col-span-5 text-gray-700 text-sm font-serif-title hidden lg:block">
+              <span class="font-bold text-crimson">核心軸線：</span>自我覺察 ‧ 理解他人 ‧ 社會實踐 (SEL)
+            </div>
+          </div>
+
+          <!-- Grade 4 (Highlighted) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-5 text-gray-700 text-sm font-serif-title hidden lg:block text-right">
+              <span class="font-bold text-lush">核心軸線：</span>城市故事 ‧ 生態保育 ‧ 微觀視角
+            </div>
+            <div class="lg:col-span-2 flex justify-center">
+              <div class="w-14 h-14 rounded-full bg-lush text-white font-serif-title font-black text-xl flex items-center justify-center shadow-lg ring-4 ring-lush/20">
+                4
+              </div>
+            </div>
+            <div class="lg:col-span-5">
+              <div class="bg-white p-6 rounded-2xl border-2 border-lush/40 shadow-md hover:shadow-lg transition-all relative overflow-hidden">
+                <span class="absolute top-0 right-0 bg-lush text-white text-[10px] px-3 py-1 font-serif-title rounded-bl-lg font-bold">重點部訂課程</span>
+                <div class="flex items-center justify-between gap-3 mb-2">
+                  <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-lush/10 text-lush">四年級 ‧ 8節</span>
+                  <span class="text-xs text-lush font-serif-title font-bold">（光）陰的故事</span>
+                </div>
+                <h3 class="font-serif-title text-xl font-bold text-ink mb-1">（光）陰的故事｜造形色彩</h3>
+                <p class="text-sm text-gray-600">剪影劇場、微型攝影、故宮三遠山水與同安船生態聯展。</p>
+                <div class="mt-3 text-xs text-lush font-serif-title font-bold">代表藝術家：林玉山、Kara Walker、田中達也、范寬、郭熙</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grade 5 -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-5 lg:text-right">
+              <div class="bg-white p-6 rounded-2xl border border-gold/30 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between lg:justify-end gap-3 mb-2">
+                  <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-teal-100 text-teal-800">五年級 ‧ 6節</span>
+                  <span class="text-xs text-gray-500 font-serif-title">（飄浮）天空之城</span>
+                </div>
+                <h3 class="font-serif-title text-xl font-bold text-ink mb-1">（飄浮）天空之城｜永續與比例</h3>
+                <p class="text-sm text-gray-600">探索環境永續發展與空間幾何比例美感。</p>
+                <div class="mt-3 text-xs text-celadon font-serif-title">代表藝術家：黃土水、John Edmark、Christo</div>
+              </div>
+            </div>
+            <div class="lg:col-span-2 flex justify-center">
+              <div class="w-12 h-12 rounded-full bg-celadon text-white font-serif-title font-bold text-lg flex items-center justify-center shadow-md ring-4 ring-paper">
+                5
+              </div>
+            </div>
+            <div class="lg:col-span-5 text-gray-500 text-xs font-serif-title hidden lg:block">
+              核心議題：永續 ‧ 黃金比例
+            </div>
+          </div>
+
+          <!-- Grade 6 (Highlighted) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-5 text-gray-700 text-sm font-serif-title hidden lg:block text-right">
+              <span class="font-bold text-celadon">核心軸線：</span>幾何秩序 ‧ 錯視空間 ‧ 社會雕塑
+            </div>
+            <div class="lg:col-span-2 flex justify-center">
+              <div class="w-14 h-14 rounded-full bg-celadon text-white font-serif-title font-black text-xl flex items-center justify-center shadow-lg ring-4 ring-celadon/20">
+                6
+              </div>
+            </div>
+            <div class="lg:col-span-5">
+              <div class="bg-white p-6 rounded-2xl border-2 border-celadon/40 shadow-md hover:shadow-lg transition-all relative overflow-hidden">
+                <span class="absolute top-0 right-0 bg-celadon text-white text-[10px] px-3 py-1 font-serif-title rounded-bl-lg font-bold">重點部訂課程</span>
+                <div class="flex items-center justify-between gap-3 mb-2">
+                  <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-celadon/10 text-celadon">六年級 ‧ 8節</span>
+                  <span class="text-xs text-celadon font-serif-title font-bold">尋常中的不尋常</span>
+                </div>
+                <h3 class="font-serif-title text-xl font-bold text-ink mb-1">(尋)常中的不尋常｜造形色彩</h3>
+                <p class="text-sm text-gray-600">黃金比例、艾雪錯視、波依斯社會雕塑與超現實夢境拼貼。</p>
+                <div class="mt-3 text-xs text-celadon font-serif-title font-bold">代表藝術家：石川欽一郎、Olafur Eliasson、塞尚、Escher、Beuys</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 2.5: THREE ORIENTATIONS OF HOLISTIC ART EDUCATION -->
+  <section id="orientations" class="py-20 bg-paper relative border-b border-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-block px-3 py-1 rounded-full bg-sand border border-gold/40 text-xs font-serif-title text-crimson font-bold">
+          Holistic Art Education Framework
+        </div>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-ink">
+          當代全人藝術教育之三大取向與烹飪美學
+        </h2>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          當代全人藝術教育主張將「學生取向」、「學科取向」與「議題取向」三者統合與彈性運用，實現學生的身心靈整體發展。
+        </p>
+      </div>
+
+      <!-- 3 Orientation Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: 學生取向 (Student-Centered) -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-amber-200 shadow-sm hover:shadow-xl transition-all space-y-6 relative overflow-hidden flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold font-serif-title">學生取向 / 創造性取向</span>
+              <span class="text-2xl">🌱</span>
+            </div>
+            <h3 class="font-serif-title text-2xl font-bold text-ink">農場主導式烹飪</h3>
+            
+            <div class="bg-sand/60 p-4 rounded-2xl border border-amber-200 text-xs text-amber-900 leading-relaxed font-serif-title italic">
+              「重點在於食材（學生）的自然生長與獨特性。廚師（教師）的工作是提供最優質的環境與工具，避免過度干涉，讓食材的天然風味充分展現。」
+            </div>
+
+            <div class="space-y-2 text-xs text-gray-700">
+              <div class="font-bold text-gray-900 border-b border-sand pb-1 font-serif-title">核心哲學與具體教學作為：</div>
+              <ul class="space-y-1.5 list-disc list-inside text-gray-600">
+                <li><strong>尊重個體與過程：</strong>不干擾兒童塗鴉，珍視個人風格與作品原創性。</li>
+                <li><strong>以經驗為中心：</strong>題材與兒童生活關聯（自己、家人、身體細膩覺察）。</li>
+                <li><strong>彈性空間與時間：</strong>給予足夠時間創作，不限定自我表現長短。</li>
+                <li><strong>符合知動發展：</strong>提供適齡安全材料，讓兒童熟練並充分表達情感。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-sand text-[11px] text-amber-800 font-serif-title font-semibold">
+            ✦ 體現於「藝融白川」：Lowenfeld 感官發展、醃漬多媒材與色彩自由流動。
+          </div>
+        </div>
+
+        <!-- Card 2: 學科取向 (Discipline-Based) -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-blue-200 shadow-sm hover:shadow-xl transition-all space-y-6 relative overflow-hidden flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold font-serif-title">學科取向 / DBAE</span>
+              <span class="text-2xl">🎓</span>
+            </div>
+            <h3 class="font-serif-title text-2xl font-bold text-ink">法國烹飪學院</h3>
+            
+            <div class="bg-sand/60 p-4 rounded-2xl border border-blue-200 text-xs text-blue-900 leading-relaxed font-serif-title italic">
+              「強調嚴謹的技術、歷史、美學與批評。課程結構清晰、循序漸進，確保學生掌握藝術這門學科的全部知識與精確技能。」
+            </div>
+
+            <div class="space-y-2 text-xs text-gray-700">
+              <div class="font-bold text-gray-900 border-b border-sand pb-1 font-serif-title">四大學習領域與結構作為：</div>
+              <ul class="space-y-1.5 list-disc list-inside text-gray-600">
+                <li><strong>藝術創作 (Production)：</strong>精細技巧、觀察技巧與開放性問題解決。</li>
+                <li><strong>藝術批評 (Criticism)：</strong>描述、分析、闡釋與評價，引導理性討論。</li>
+                <li><strong>藝術史/文化 (History)：</strong>理解藝術文化脈絡，賞析多樣化大師作品。</li>
+                <li><strong>美學 (Aesthetics)：</strong>審美覺知精鍊、形式品質敏銳感受（線條/色彩/空間）。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-sand text-[11px] text-blue-800 font-serif-title font-semibold">
+            ✦ 體現於「藝融白川」：故宮三遠空間、黃金比例 1:1.618 與 Notan 明暗秩序。
+          </div>
+        </div>
+
+        <!-- Card 3: 議題取向 (Issue-Based) -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-emerald-200 shadow-sm hover:shadow-xl transition-all space-y-6 relative overflow-hidden flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold font-serif-title">議題取向 / SCAE</span>
+              <span class="text-2xl">🌍</span>
+            </div>
+            <h3 class="font-serif-title text-2xl font-bold text-ink">在地社會飲食運動</h3>
+            
+            <div class="bg-sand/60 p-4 rounded-2xl border border-emerald-200 text-xs text-emerald-900 leading-relaxed font-serif-title italic">
+              「菜單設計以回應當前社會文化議題或在地社區需求為主。烹飪不僅是為了美感或技巧，更是為了推動文化理解與社會對話。」
+            </div>
+
+            <div class="space-y-2 text-xs text-gray-700">
+              <div class="font-bold text-gray-900 border-b border-sand pb-1 font-serif-title">核心作為與大理念統整：</div>
+              <ul class="space-y-1.5 list-disc list-inside text-gray-600">
+                <li><strong>社會中心 (SCAE)：</strong>社區本位教育，將在地文化與環境脈絡引入課堂。</li>
+                <li><strong>視覺文化解讀：</strong>解讀媒體意象、民俗與大眾文化，尊重多元文化。</li>
+                <li><strong>「大理念」議題統整：</strong>以權力、衝突、環境永續等重大議題設計專題。</li>
+                <li><strong>探索四關聯：</strong>啟發創作中「自我(Self)‧藝術(Art)‧文化(Culture)‧生態(Ecology)」。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-sand text-[11px] text-emerald-800 font-serif-title font-semibold">
+            ✦ 體現於「藝融白川」：陳澄波土地關懷、諸羅生態微型聯展與波依斯社會雕塑。
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: INTERACTIVE COURSE EXPLORATION & FILTER -->
+  <section id="courses" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-block px-3 py-1 rounded-full bg-sand text-crimson text-xs font-serif-title font-semibold mb-2">
+            Interactive Curriculum Directory
+          </div>
+          <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-ink">
+            年級課程專區單元列表
+          </h2>
+          <p class="text-gray-600 text-sm mt-1">
+            點擊各課程單元卡片可展開查看詳細教學目標、藝術家鑑賞、SEL與理論重點
+          </p>
+        </div>
+
+        <!-- Live Search Input -->
+        <div class="w-full md:w-80">
+          <div class="relative">
+            <input type="text" id="course-search" placeholder="搜尋關鍵字（如：陳澄波、黃金比例、Notan...）" class="w-full px-4 py-2.5 pl-10 rounded-xl bg-white border border-gold/40 text-sm focus:outline-none focus:ring-2 focus:ring-crimson/50 shadow-sm">
+            <svg class="w-4 h-4 text-gray-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Controls (Grade Tabs & Core Subject Badges) -->
+      <div class="bg-white p-6 rounded-2xl border border-gold/30 shadow-sm mb-10 space-y-4">
+        
+        <!-- Grade Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-serif-title font-bold text-gray-500 mr-2">年級切換：</span>
+          <button data-grade="all" class="grade-filter-btn active px-4 py-2 rounded-xl text-xs font-serif-title font-medium transition-all bg-crimson text-white shadow-sm">
+            全部年級 (All)
+          </button>
+          <button data-grade="3" class="grade-filter-btn px-4 py-2 rounded-xl text-xs font-serif-title font-medium transition-all bg-sand text-gray-700 hover:bg-goldlight">
+            三年級 ‧ 生活美學
+          </button>
+          <button data-grade="4" class="grade-filter-btn px-4 py-2 rounded-xl text-xs font-serif-title font-medium transition-all bg-sand text-gray-700 hover:bg-goldlight">
+            四年級 ‧ 造形色彩
+          </button>
+          <button data-grade="6" class="grade-filter-btn px-4 py-2 rounded-xl text-xs font-serif-title font-medium transition-all bg-sand text-gray-700 hover:bg-goldlight">
+            六年級 ‧ 造形色彩
+          </button>
+        </div>
+
+        <div class="golden-line"></div>
+
+        <!-- Subject Tag Filters -->
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-serif-title font-bold text-gray-500 mr-2">核心主軸：</span>
+          <button data-theme="all" class="theme-filter-btn active px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-ink text-white">
+            全部主軸
+          </button>
+          <button data-theme="culture" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-sand text-crimson border border-crimson/30 hover:bg-crimson/10">
+            🏛️ 文化 Culture
+          </button>
+          <button data-theme="ecology" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-sand text-lush border border-lush/30 hover:bg-lush/10">
+            🌿 生態 Ecology
+          </button>
+          <button data-theme="self" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-sand text-celadon border border-celadon/30 hover:bg-celadon/10">
+            👤 自我 Self (SEL)
+          </button>
+        </div>
+
+      </div>
+
+      <!-- COURSE CARDS GRID CONTAINER -->
+      <div id="course-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- CARD G3-1: 帝展榮光 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="3" data-theme="culture" data-keywords="陳澄波 帝展榮光 洋紅 綠蔭 土地關懷 Lowenfeld 薩提爾 冰山">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-crimson/10 text-crimson">三年級 ‧ 上學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">文化 Culture</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">帝展榮光：陳澄波洋紅與綠蔭</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              介紹臺灣美術先驅陳澄波作品，透過洋紅與南國綠蔭的色彩對比，引導孩子覺察鄉土土地情感與臺灣美術史榮光。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>陳澄波</div>
+              <div><strong class="text-gray-700">教學理論：</strong>Lowenfeld 感官創造 / 薩提爾冰山 model</div>
+            </div>
+          </div>
+          <button onclick="openModal('g3-1')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-crimson hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G3-2: Keith Haring 符號塗鴉牆 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="3" data-theme="self" data-keywords="Keith Haring 塗鴉 符號 塗鴉牆 身體語言 社會實踐">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-crimson/10 text-crimson">三年級 ‧ 上學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800">自我 Self</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">符號與連繫：Keith Haring 塗鴉牆</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              探索 Keith Haring 普普藝術動感人物與符號，將個人情感與關懷轉化為視覺符號，並進行校園塗鴉牆社會實踐。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>Keith Haring</div>
+              <div><strong class="text-gray-700">教學特色：</strong>校園公共塗鴉牆創作 / 符號轉化</div>
+            </div>
+          </div>
+          <button onclick="openModal('g3-2')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-crimson hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G3-3: 醃漬水墨實驗 & 梵谷色彩之流 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="3" data-theme="self" data-keywords="醃漬 水墨 梵谷 自動性繪畫 非牛頓流體 色彩之流 感官體驗">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-crimson/10 text-crimson">三年級 ‧ 上學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800">自我 Self</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">醃漬水墨與梵谷色彩之流</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              結合食材醃漬多媒材水墨擴散與梵谷色彩旋律，操作非牛頓流體自動性繪畫，感受色彩與流動的無窮變化。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>梵谷 (Vincent van Gogh)</div>
+              <div><strong class="text-gray-700">教學特色：</strong>非牛頓流體實驗 / 多媒材醃漬</div>
+            </div>
+          </div>
+          <button onclick="openModal('g3-3')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-crimson hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G3-4: 現代水墨與 Notan 黑白空間 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="3" data-theme="culture" data-keywords="水墨 袁金塔 席德進 鄭問 宋朝 Notan 明暗 黑白 空間 Brittain">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-crimson/10 text-crimson">三年級 ‧ 下學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">文化 Culture</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">水分趣味與 Notan 黑白空間</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              賞析袁金塔、席德進、鄭問與宋朝經典水墨，結合日式 Notan 正負空間切剪，培養黑白明暗空間美感思維。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>袁金塔、席德進、鄭問</div>
+              <div><strong class="text-gray-700">教學理論：</strong>Brittain 藝術反思實踐 / Notan剪紙</div>
+            </div>
+          </div>
+          <button onclick="openModal('g3-4')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-crimson hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G4-1: Kara Walker 剪影與微型攝影 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="4" data-theme="self" data-keywords="Kara Walker 剪影 影劇場 田中達也 微型攝影 視角轉換 SEL">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-lush/10 text-lush">四年級 ‧ 上學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800">自我 Self</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">黑白剪影劇場與微型攝影</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              借鏡 Kara Walker 黑白剪影與光影敘事，搭配田中達也微型世界觀，將日常生活小物轉化為奇幻視角。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>Kara Walker、田中達也</div>
+              <div><strong class="text-gray-700">教學理論：</strong>SEL 社會覺察 / 微觀視角轉換</div>
+            </div>
+          </div>
+          <button onclick="openModal('g4-1')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-lush hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G4-2: 實驗水墨與故宮三遠空間 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="4" data-theme="culture" data-keywords="潑墨 口吹 拓印 香蕉水 故宮 三遠 范寬 郭熙 李唐 山水">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-lush/10 text-lush">四年級 ‧ 上學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">文化 Culture</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">實驗水墨與故宮三遠山水</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              操作潑墨、口吹、拓印與香蕉水多媒材實驗，鑑賞故宮宋代巨碑山水（范寬《谿山行旅》、郭熙《早春圖》）三遠空間構造。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>范寬、郭熙、李唐</div>
+              <div><strong class="text-gray-700">教學特色：</strong>高遠/平遠/深遠 虛實表現</div>
+            </div>
+          </div>
+          <button onclick="openModal('g4-2')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-lush hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G4-3: 林玉山與諸羅生態微型聯展 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="4" data-theme="ecology" data-keywords="林玉山 水牛群像 蓮池 膠彩 校園植物 諸羅生態 生態圖鑑 Marschalek">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-lush/10 text-lush">四年級 ‧ 下學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-100 text-green-800">生態 Ecology</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">水牛群像與諸羅生態微型聯展</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              賞析林玉山國寶《水牛群像》與《蓮池》，進行大同校園植物觀察寫生，共同策劃「諸羅生態微型聯展」。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>林玉山</div>
+              <div><strong class="text-gray-700">教學理論：</strong>Marschalek 創造注意力轉移 / 生態保育</div>
+            </div>
+          </div>
+          <button onclick="openModal('g4-3')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-lush hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G4-4: 同安船與千里江山圖青綠山水 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="4" data-theme="culture" data-keywords="同安船 千里江山圖 青綠山水 王希孟 春之色彩 鹽粒 蠟筆阻擋 Schneider">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-lush/10 text-lush">四年級 ‧ 下學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">文化 Culture</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">同安船與《千里江山圖》青綠解碼</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              解碼王希孟《千里江山圖》青綠山水礦物顏料之美，結合同安船歷史印記與鹽粒蠟筆阻擋色彩實驗。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>王希孟 (青綠山水)</div>
+              <div><strong class="text-gray-700">教學理論：</strong>Schneider & Shiffrin 自動化流暢表達</div>
+            </div>
+          </div>
+          <button onclick="openModal('g4-4')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-lush hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G6-1: 黃金比例與艾雪錯視空間 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="6" data-theme="self" data-keywords="黃金比例 1:1.618 斐波那契 螺旋 艾雪 Escher 錯視 幾何 跨域數學">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-celadon/10 text-celadon">六年級 ‧ 上學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800">自我 Self</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">黃金比例與艾雪錯視空間</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              跨域探索黃金比例 1:1.618 矩形與斐波那契螺旋美學，剖析 M.C. Escher 錯視空間與維度圖形轉換。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>M.C. Escher</div>
+              <div><strong class="text-gray-700">教學特色：</strong>數學與美學跨域 / 幾何秩序</div>
+            </div>
+          </div>
+          <button onclick="openModal('g6-1')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-celadon hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G6-2: Eliasson光影、塞尚幾何與石川水彩 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="6" data-theme="culture" data-keywords="Olafur Eliasson 當代光影 塞尚 Cezanne 幾何塊面 石川欽一郎 水彩 地方色彩 家鄉地景">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-celadon/10 text-celadon">六年級 ‧ 上學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">文化 Culture</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">當代光影、塞尚幾何與家鄉地景</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              體驗 Eliasson 光影裝置、塞尚多視點塊面結構，並傳承石川欽一郎英式水彩，再現家鄉地方色彩。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>Eliasson、塞尚、石川欽一郎</div>
+              <div><strong class="text-gray-700">教學特色：</strong>光影採集模型 / 地方色彩再現</div>
+            </div>
+          </div>
+          <button onclick="openModal('g6-2')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-celadon hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+        <!-- CARD G6-3: 波依斯「社會雕塑」與超現實夢境 -->
+        <div class="course-card bg-white rounded-2xl p-6 shadow-sm flex flex-col justify-between" data-grade="6" data-theme="self" data-keywords="波依斯 Joseph Beuys 社會雕塑 公共藝術 超現實 夢境 拼貼 自傳式 禮運樓 策展">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-celadon/10 text-celadon">六年級 ‧ 下學期</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800">自我 Self</span>
+            </div>
+            <h3 class="font-serif-title text-xl font-bold text-ink">波依斯社會雕塑與超現實夢境</h3>
+            <p class="text-xs text-gray-600 line-clamp-3 leading-relaxed">
+              實踐約瑟夫·波依斯「日常行動即藝術」理念於校園禮運樓策展，並以自傳式拼貼構築超現實心象夢境。
+            </p>
+            <div class="text-xs text-gray-500 font-serif-title border-t border-sand pt-3 space-y-1">
+              <div><strong class="text-gray-700">對照藝術家：</strong>Joseph Beuys (波依斯)</div>
+              <div><strong class="text-gray-700">教學理論：</strong>社會雕塑 / 自傳式生命敘事</div>
+            </div>
+          </div>
+          <button onclick="openModal('g6-3')" class="mt-6 w-full py-2.5 rounded-xl bg-sand hover:bg-celadon hover:text-white text-ink text-xs font-serif-title font-bold transition-all flex items-center justify-center gap-1">
+            查看單元詳情 &rarr;
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3.5: CHEN CHENG-PO AESTHETICS & ART HISTORY QUIZ MODULE -->
+  <section id="chen-quiz" class="py-20 bg-sand/30 relative border-t border-gold/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center space-y-3 mb-12">
+        <div class="inline-block px-3 py-1 rounded-full bg-white border border-gold/40 text-xs font-serif-title text-crimson font-bold">
+          Interactive Art History Quiz
+        </div>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-ink">
+          🎨 陳澄波藝術史與美學思維隨堂測驗
+        </h2>
+        <p class="text-gray-600 text-sm max-w-2xl mx-auto leading-relaxed">
+          透過 10 道精選結構化題目，探索臺灣西洋美術先驅陳澄波先生的帝展榮光、視覺恆定性、鄉土情感與色彩思維！
+        </p>
+      </div>
+
+      <!-- Quiz Card Container -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border-2 border-gold/40 relative overflow-hidden space-y-8">
+        <div class="golden-line"></div>
+
+        <!-- Quiz Progress Bar & Header -->
+        <div id="chen-quiz-header" class="flex items-center justify-between border-b border-sand pb-4">
+          <div class="flex items-center gap-2">
+            <span class="ink-stamp text-crimson border-crimson px-2.5 py-0.5 text-xs font-bold">美學堂課</span>
+            <span id="chen-quiz-progress-text" class="text-xs font-serif-title font-bold text-gray-700">題目 1 / 10</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-32 sm:w-48 h-2.5 bg-sand rounded-full overflow-hidden">
+              <div id="chen-quiz-progress-bar" class="h-full bg-crimson rounded-full transition-all duration-300" style="width: 10%"></div>
+            </div>
+            <span id="chen-quiz-score-badge" class="text-xs font-bold text-crimson font-mono bg-crimson/10 px-2 py-0.5 rounded-md">得分: 0</span>
+          </div>
+        </div>
+
+        <!-- Question Body Area (Question View) -->
+        <div id="chen-quiz-body" class="space-y-6">
+          <h3 id="chen-quiz-question-title" class="font-serif-title text-lg sm:text-xl font-bold text-ink leading-relaxed">
+            1. 載入中...
+          </h3>
+
+          <!-- Options Grid -->
+          <div id="chen-quiz-options" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Options dynamically rendered by JS -->
+          </div>
+
+          <!-- Feedback & Explanation Box (Initially Hidden) -->
+          <div id="chen-quiz-explanation-box" class="hidden p-5 rounded-2xl border transition-all space-y-2">
+            <div id="chen-quiz-result-title" class="font-serif-title font-bold text-sm">
+              <!-- Result Icon & Title -->
+            </div>
+            <p id="chen-quiz-explanation-text" class="text-xs text-gray-700 leading-relaxed">
+              <!-- Explanation text -->
+            </p>
+          </div>
+
+          <!-- Bottom Action Buttons -->
+          <div class="flex justify-end pt-4 border-t border-sand">
+            <button id="chen-quiz-next-btn" onclick="nextChenQuestion()" disabled class="px-6 py-2.5 rounded-xl bg-gray-300 text-gray-500 font-serif-title text-xs font-bold transition-all cursor-not-allowed flex items-center gap-1">
+              下一題 &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Final Results Area (Result View - Initially Hidden) -->
+        <div id="chen-quiz-result-view" class="hidden text-center space-y-8 py-6">
+          <div class="inline-block w-20 h-20 rounded-full bg-crimson/10 text-crimson flex items-center justify-center text-4xl font-black mx-auto ring-4 ring-crimson/20">
+            🏆
+          </div>
+
+          <div class="space-y-2">
+            <div class="text-xs font-serif-title font-bold text-gold uppercase tracking-widest">Quiz Completed</div>
+            <h3 class="font-serif-title text-3xl font-bold text-ink">測驗完成！成績結算</h3>
+          </div>
+
+          <!-- Score Card -->
+          <div class="bg-sand/40 p-6 rounded-2xl border border-gold/30 max-w-md mx-auto space-y-3">
+            <div class="text-xs text-gray-500 font-serif-title">您的最終得分</div>
+            <div id="chen-quiz-final-score" class="text-5xl font-black text-crimson font-serif-title">
+              100 <span class="text-sm font-normal text-gray-500">/ 100 分</span>
+            </div>
+            <div id="chen-quiz-final-correct" class="text-xs text-gray-600 font-bold">
+              答對 10 / 10 題
+            </div>
+            
+            <div class="pt-3 border-t border-gold/20">
+              <div class="text-xs font-bold text-amber-800 mb-1">獲得成就稱號：</div>
+              <div id="chen-quiz-title-badge" class="font-serif-title font-black text-lg text-amber-900 bg-amber-100/80 px-4 py-1.5 rounded-xl inline-block border border-amber-300">
+                🌟 帝展大師級賞析家
+              </div>
+              <p id="chen-quiz-title-desc" class="text-xs text-gray-600 mt-2 px-4 leading-relaxed">
+                您對陳澄波先生的藝術風格與生命故事有著大師級的深刻理解！
+              </p>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap justify-center gap-4 pt-2">
+            <button onclick="restartChenQuiz()" class="px-6 py-3 rounded-xl bg-crimson hover:bg-crimson/90 text-white font-serif-title text-xs font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+              🔄 重新挑戰測驗
+            </button>
+            <button onclick="copyChenQuizResult()" class="px-6 py-3 rounded-xl bg-sand hover:bg-goldlight text-ink border border-gold/50 font-serif-title text-xs font-bold transition-all flex items-center gap-2">
+              📋 複製成績報告
+            </button>
+          </div>
+        </div>
+
+        <div class="golden-line"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: ASSESSMENT & PEDAGOGICAL FEATURES -->
+  <section id="assessment" class="py-20 bg-sand/60 border-t border-gold/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-block px-3 py-1 rounded-full bg-white border border-gold/40 text-xs font-serif-title text-crimson font-bold">
+          Pedagogical Assessment & Innovation
+        </div>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-ink">
+          雙軌評量機制與美學教學特色
+        </h2>
+        <p class="text-gray-600 text-sm">
+          兼顧歷程性觀察與終結性表現，創造兼具感官深度與公共參與的藝術實踐場域
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- 50/50 Dual Assessment Graphic Chart -->
+        <div class="lg:col-span-5 bg-white p-8 rounded-3xl border border-gold/40 shadow-sm flex flex-col justify-between">
+          <div class="space-y-6">
+            <h3 class="font-serif-title text-2xl font-bold text-ink flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-crimson"></span>
+              雙軌多元評量系統 (50% + 50%)
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              打破單一分數評量，結合學習歷程檔案與總結創作展演，確保每位孩子在自信與反思中成長。
+            </p>
+
+            <!-- Dual Progress Bar -->
+            <div class="space-y-4 pt-2">
+              <div>
+                <div class="flex justify-between text-xs font-serif-title font-bold mb-1">
+                  <span class="text-crimson">定期 / 總結評量 (Summative)</span>
+                  <span class="text-crimson">50%</span>
+                </div>
+                <div class="w-full h-4 bg-sand rounded-full overflow-hidden">
+                  <div class="h-full bg-crimson rounded-full" style="width: 50%"></div>
+                </div>
+                <div class="text-[11px] text-gray-500 mt-1">階段創作成果、專題發表、視覺表現能力</div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-serif-title font-bold mb-1">
+                  <span class="text-celadon">平時 / 歷程評量 (Formative)</span>
+                  <span class="text-celadon">50%</span>
+                </div>
+                <div class="w-full h-4 bg-sand rounded-full overflow-hidden">
+                  <div class="h-full bg-celadon rounded-full" style="width: 50%"></div>
+                </div>
+                <div class="text-[11px] text-gray-500 mt-1">學習歷程檔案 (Portfolio)、對話參與、學習態度</div>
+              </div>
+            </div>
+
+            <!-- Badges Grid -->
+            <div class="pt-4 space-y-2">
+              <div class="text-xs font-serif-title font-bold text-gray-700">五大動態評量方式：</div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg bg-sand border border-gold/30 text-xs font-medium text-gray-800 flex items-center gap-1.5">
+                  🎤 口頭發表
+                </span>
+                <span class="px-3 py-1.5 rounded-lg bg-sand border border-gold/30 text-xs font-medium text-gray-800 flex items-center gap-1.5">
+                  📁 作品檔案
+                </span>
+                <span class="px-3 py-1.5 rounded-lg bg-sand border border-gold/30 text-xs font-medium text-gray-800 flex items-center gap-1.5">
+                  🎨 實作表現
+                </span>
+                <span class="px-3 py-1.5 rounded-lg bg-sand border border-gold/30 text-xs font-medium text-gray-800 flex items-center gap-1.5">
+                  👁️ 課堂觀察
+                </span>
+                <span class="px-3 py-1.5 rounded-lg bg-sand border border-gold/30 text-xs font-medium text-gray-800 flex items-center gap-1.5">
+                  👥 同儕互評
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-sand text-center text-xs text-gray-500 font-serif-title">
+            依據 Brittain 藝術反思實踐模式（觀察、表現、反思）設計
+          </div>
+        </div>
+
+        <!-- Special Teaching Environments Cards -->
+        <div class="lg:col-span-7 space-y-6 flex flex-col justify-between">
+          
+          <div class="bg-white p-6 rounded-2xl border border-gold/30 shadow-sm flex items-start gap-4 hover:border-crimson/40 transition-colors">
+            <div class="w-12 h-12 rounded-2xl bg-crimson/10 text-crimson font-bold text-xl flex items-center justify-center shrink-0">
+              🏛️
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-serif-title font-bold text-lg text-ink">校園公共空間微型策展（禮運樓展區）</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                結合波依斯（Joseph Beuys）「社會雕塑」理論，將學生的美學成果展示於大同校園「禮運樓」公共廊道與空間，讓藝術創作走出教室、進入日常生命。
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-gold/30 shadow-sm flex items-start gap-4 hover:border-lush/40 transition-colors">
+            <div class="w-12 h-12 rounded-2xl bg-lush/10 text-lush font-bold text-xl flex items-center justify-center shrink-0">
+              🧪
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-serif-title font-bold text-lg text-ink">五感與多媒材跨域實驗室</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                打破傳統單一媒材限制，跨界實驗食材醃漬水墨擴散、非牛頓流體自動性色彩、香蕉水拓印、蠟筆結晶阻擋與當代光影裝置模型。
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-gold/30 shadow-sm flex items-start gap-4 hover:border-celadon/40 transition-colors">
+            <div class="w-12 h-12 rounded-2xl bg-celadon/10 text-celadon font-bold text-xl flex items-center justify-center shrink-0">
+              🧠
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-serif-title font-bold text-lg text-ink">SEL 社會情緒學習與薩提爾冰山覺察</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                融入 Satir 薩提爾冰山探索模型與 Lowenfeld 感官發展階段，引導孩子從創作中覺察內在渴望、調適情緒，實現藝術治療與自我轉化。
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4.5: INTERACTIVE SELF-ASSESSMENT QUIZ (Colbert & Taunton, 1992) -->
+  <section id="quiz-section" class="py-20 bg-sand/40 border-t border-gold/30 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <div class="inline-block px-3 py-1 rounded-full bg-white border border-gold/40 text-xs font-serif-title text-crimson font-bold">
+          Self-Assessment & Professional Development
+        </div>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-ink">
+          【藝術教育實務互動自評測驗】
+        </h2>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          依據 <strong>Colbert 與 Taunton (1992)</strong> 學術理論設計。請針對您目前的藝術教學實務進行 1~5 分自評（1 = 幾乎不符合，5 = 完全符合），測驗完畢將自動生成您的全人藝術教學診斷分析報告！
+        </p>
+      </div>
+
+      <!-- Quiz Wrapper Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Interactive Form (8 Cols) -->
+        <div class="lg:col-span-8 bg-white p-6 sm:p-8 rounded-3xl border border-gold/40 shadow-sm space-y-8">
+          
+          <!-- Teacher & Class Basic Info -->
+          <div class="bg-sand/40 p-5 rounded-2xl border border-gold/30 space-y-4">
+            <h3 class="font-serif-title font-bold text-base text-ink flex items-center gap-2">
+              📝 基本資料與課程資訊 (填寫後可隨報告匯出)
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+              <div>
+                <label class="block font-serif-title font-bold text-gray-700 mb-1">授課教師姓名：</label>
+                <input type="text" id="quiz-teacher" placeholder="請輸入姓名（如：高玉娟 老師）" value="高玉娟 老師" class="w-full px-3 py-2 rounded-xl bg-white border border-gold/40 text-xs focus:outline-none focus:ring-2 focus:ring-crimson/50">
+              </div>
+              <div>
+                <label class="block font-serif-title font-bold text-gray-700 mb-1">學年度 / 學期：</label>
+                <input type="text" id="quiz-term" placeholder="例如：114 學年度下學期" value="114 學年度下學期" class="w-full px-3 py-2 rounded-xl bg-white border border-gold/40 text-xs focus:outline-none focus:ring-2 focus:ring-crimson/50">
+              </div>
+              <div>
+                <label class="block font-serif-title font-bold text-gray-700 mb-1">授課科目：</label>
+                <input type="text" id="quiz-subject" placeholder="例如：生活美學 / 綜合媒材" value="生活美學 / 造形色彩" class="w-full px-3 py-2 rounded-xl bg-white border border-gold/40 text-xs focus:outline-none focus:ring-2 focus:ring-crimson/50">
+              </div>
+              <div>
+                <label class="block font-serif-title font-bold text-gray-700 mb-1">評鑑單元名稱：</label>
+                <input type="text" id="quiz-unit" placeholder="例如：藝融白川校本美學" value="藝融白川 6 道課程" class="w-full px-3 py-2 rounded-xl bg-white border border-gold/40 text-xs focus:outline-none focus:ring-2 focus:ring-crimson/50">
+              </div>
+            </div>
+          </div>
+
+          <!-- 17 Rating Questions Container -->
+          <div class="space-y-6" id="quiz-questions">
+            
+            <!-- Dimension 1 -->
+            <div class="space-y-3">
+              <h4 class="font-serif-title font-bold text-sm text-crimson bg-crimson/5 px-3 py-1.5 rounded-lg inline-block">
+                一、 課程目標與規劃 (Target & Planning)
+              </h4>
+              
+              <!-- Q1 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  1. 我的課程主要目的是鼓勵兒童發展，以及兒童對藝術的了解與投入。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q1" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q1" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q1" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q1" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q1" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-crimson font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q2 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  2. 我的課程有明確的範圍與程序，能涵容兒童的興趣、技能與資質，並基於發展上適當的宗旨與目標。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q2" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q2" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q2" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q2" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q2" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-crimson font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q3 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  3. 我能覺察兒童藝術與美感發展標記，並表達對兒童個別表現的欣賞。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q3" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q3" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q3" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q3" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q3" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-crimson font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dimension 2 -->
+            <div class="space-y-3">
+              <h4 class="font-serif-title font-bold text-sm text-lush bg-lush/5 px-3 py-1.5 rounded-lg inline-block">
+                二、 課程內容組成 (Content & Open Outcomes)
+              </h4>
+              
+              <!-- Q4 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  4. 我的課程包含藝術創作、知覺活動、與回應活動的均衡組合。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q4" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q4" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q4" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q4" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q4" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-lush font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q5 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  5. 課程中的練習與活動是基於兒童興趣、他們所能做的、以及需要學習做的。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q5" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q5" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q5" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q5" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q5" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-lush font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q6 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  6. 所有的練習與活動皆以「結果開放」的方式規劃，鼓勵作品具備個人的與自我表現特質。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q6" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q6" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q6" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q6" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q6" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-lush font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dimension 3 -->
+            <div class="space-y-3">
+              <h4 class="font-serif-title font-bold text-sm text-celadon bg-celadon/5 px-3 py-1.5 rounded-lg inline-block">
+                三、 藝術材料與環境 (Materials & Environment)
+              </h4>
+              
+              <!-- Q7 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  7. 我選擇的材料是容易操作、安全，且符合兒童之自我表現需求的。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q7" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q7" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q7" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q7" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q7" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-celadon font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q8 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  8. 我安排材料的方式是方便於自動自發的藝術活動。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q8" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q8" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q8" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q8" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q8" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-celadon font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q9 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  9. 我鼓勵兒童負責照顧藝術材料與清理藝術活動區域。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q9" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q9" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q9" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q9" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q9" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-celadon font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dimension 4 & 5 & 6 & 7 (Q10 ~ Q17) -->
+            <div class="space-y-3">
+              <h4 class="font-serif-title font-bold text-sm text-gold bg-gold/10 px-3 py-1.5 rounded-lg inline-block">
+                四、 跨領域、創作過程、展示與回應 (Integration & Appreciation)
+              </h4>
+
+              <!-- Q10 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  10. 我的視覺藝術課程運用其它領域所教的概念與技能，並整合為整體教學。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q10" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q10" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q10" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q10" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q10" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-gold font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q11 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  11. 我在遊戲化與支持性環境中給予兒童足夠時間投入創作，鼓勵兒童創造屬於自己的意象與理念。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q11" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q11" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q11" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q11" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q11" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-gold font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q12 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  12. 我以兒童的眼睛高度展示作品，並利用展示引導兒童反省、討論作品的積極品質。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q12" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q12" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q12" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q12" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q12" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-gold font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q13 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  13. 我使用發問技巧去引發對作品的回應，鼓勵兒童描述與解釋感覺，而非單向演講告知。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q13" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q13" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q13" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q13" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q13" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-gold font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <!-- Q14-17 -->
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  14. 我能主動警惕不適當的實務（如：不使用套版製作、不追求單一漂亮的成人群像展示）。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q14" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q14" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q14" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q14" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q14" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-gold font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  15. 我重視兒童創作過程中的情感發洩與自我發現，勝過藝術成品結果。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q15" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q15" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q15" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q15" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q15" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-gold font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  16. 我的課程設計能夠整合「學生取向」、「學科取向 DBAE」與「議題取向 SCAE」。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q16" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q16" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q16" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q16" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q16" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-gold font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-sand/30 border border-gold/20 space-y-3">
+                <div class="text-xs font-bold text-gray-800">
+                  17. 我能持續省思並記錄專業成長（包含適當實務範例與需要警惕改善的項目）。
+                </div>
+                <div class="flex items-center justify-between text-xs text-gray-600 gap-2">
+                  <span class="text-[11px] text-gray-400">幾乎不符合 (1)</span>
+                  <div class="flex items-center gap-3 font-bold">
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q17" value="1" onclick="calcQuizScore()"> 1</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q17" value="2" onclick="calcQuizScore()"> 2</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q17" value="3" onclick="calcQuizScore()"> 3</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q17" value="4" onclick="calcQuizScore()"> 4</label>
+                    <label class="cursor-pointer flex items-center gap-1"><input type="radio" name="q17" value="5" checked onclick="calcQuizScore()"> 5</label>
+                  </div>
+                  <span class="text-[11px] text-gold font-bold">完全符合 (5)</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Section: Open Reflection Questions -->
+          <div class="space-y-4 pt-4 border-t border-sand">
+            <h4 class="font-serif-title font-bold text-sm text-ink flex items-center gap-2">
+              💭 教學省思與專業成長 (開放式問答)
+            </h4>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1">1. 針對本次課程，您認為哪一個「適當的實務」執行得最成功？（請說明具體例子）</label>
+              <textarea id="quiz-reflect1" rows="2" placeholder="例如：在水墨流動單元中給予足夠時間與開放結果，孩子展現高度獨特色彩..." class="w-full p-3 rounded-xl bg-sand/30 border border-gold/40 text-xs focus:outline-none focus:ring-2 focus:ring-crimson/50"></textarea>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1">2. 針對本次課程，您認為哪一個「不適當的實務」需要特別警惕與改善？</label>
+              <textarea id="quiz-reflect2" rows="2" placeholder="例如：警惕時間分配過緊，未來應留給兒童更多自主清理與展示討論時間..." class="w-full p-3 rounded-xl bg-sand/30 border border-gold/40 text-xs focus:outline-none focus:ring-2 focus:ring-crimson/50"></textarea>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Real-time Score Board & Report Output (4 Cols) -->
+        <div class="lg:col-span-4 sticky top-24 space-y-6">
+          
+          <div class="bg-white p-6 rounded-3xl border-2 border-gold/50 shadow-xl space-y-6">
+            <div class="text-center space-y-2 border-b border-sand pb-4">
+              <div class="text-xs font-serif-title font-bold text-gold uppercase tracking-wider">Holistic Diagnostic Report</div>
+              <h3 class="font-serif-title text-xl font-bold text-ink">全人藝術實踐診斷報告</h3>
+            </div>
+
+            <!-- Score Display -->
+            <div class="text-center space-y-2 py-2 bg-sand/40 rounded-2xl border border-gold/30">
+              <div class="text-xs text-gray-500 font-serif-title">適當實務達成總分</div>
+              <div class="text-4xl sm:text-5xl font-black text-crimson font-serif-title" id="quiz-total-score">
+                85 <span class="text-sm font-normal text-gray-500">/ 85 分</span>
+              </div>
+              <div class="w-4/5 mx-auto h-2 bg-sand rounded-full overflow-hidden">
+                <div id="quiz-score-bar" class="h-full bg-crimson rounded-full transition-all duration-500" style="width: 100%"></div>
+              </div>
+              <div class="text-[11px] text-gray-600 font-semibold" id="quiz-score-pct">達成率：100%</div>
+            </div>
+
+            <!-- Level Badge -->
+            <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-center space-y-1">
+              <div class="text-xs text-amber-800 font-bold">您的實踐等級：</div>
+              <div class="font-serif-title font-black text-lg text-amber-900" id="quiz-level-badge">
+                🌟 典範全人藝術導師
+              </div>
+              <p class="text-[11px] text-amber-800 leading-relaxed pt-1" id="quiz-level-desc">
+                您的教學實務高度符合 Colbert & Taunton 全人發展指標，兼顧兒童中心、學科結構與社會議題！
+              </p>
+            </div>
+
+            <!-- Export / Copy Action Buttons -->
+            <div class="space-y-3 pt-2">
+              <button onclick="downloadPDFReport()" class="w-full py-3 rounded-xl bg-crimson hover:bg-crimson/90 text-white font-serif-title text-xs font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                📄 一鍵下載 PDF 自評診斷報告
+              </button>
+              <button onclick="copyQuizReport()" class="w-full py-2.5 rounded-xl bg-sand hover:bg-goldlight text-ink font-serif-title text-xs font-bold border border-gold/40 transition-all flex items-center justify-center gap-2">
+                📋 複製文字報告
+              </button>
+              <button onclick="toggleInappropriateList()" class="w-full py-2.5 rounded-xl bg-sand hover:bg-goldlight text-ink font-serif-title text-xs font-bold border border-gold/40 transition-all">
+                ⚠️ 對照「不適當實務警惕清單」
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Inappropriate Practices Warning Accordion Card -->
+          <div id="inappropriate-card" class="hidden bg-white p-6 rounded-3xl border border-red-200 shadow-md space-y-4">
+            <div class="flex items-center justify-between">
+              <h4 class="font-serif-title font-bold text-sm text-red-800 flex items-center gap-1.5">
+                ⚠️ Colbert & Taunton 不適當實務警惕表
+              </h4>
+              <button onclick="toggleInappropriateList()" class="text-xs text-gray-400 hover:text-gray-600">✕ 關閉</button>
+            </div>
+            <p class="text-[11px] text-gray-600">
+              教學中應警惕並避免出現以下不適當的實務：
+            </p>
+            <ul class="text-xs text-gray-700 space-y-2 list-disc list-inside bg-red-50/50 p-3 rounded-xl">
+              <li>缺乏明確目的與目標，僅隨教師喜好或節日製作跟隨步驟之工藝品。</li>
+              <li>基於成人奇想展示所謂「漂亮的」或「整潔的」相似作品。</li>
+              <li>使用阻礙兒童表現的不適當材料，或材料一手包辦限制取得。</li>
+              <li>藝術作為孤立領域，僅為「製作帶走」活動而缺乏討論。</li>
+              <li>在緊張與威嚇氣氛中創作，一再催促兒童要快。</li>
+              <li>要求兒童完全跟隨範例，不允許偏離例子。</li>
+              <li>僅展示教師喜好作品，或以成人的眼睛高度展示。</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 5: ORIGINAL CURRICULUM POSTERS EXHIBITION -->
+  <section id="posters" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-block px-3 py-1 rounded-full bg-sand border border-gold/40 text-xs font-serif-title text-crimson font-bold">
+          Original Curriculum Posters Showcase
+        </div>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-ink">
+          校本美學課程原稿與海報特展
+        </h2>
+        <p class="text-gray-600 text-sm">
+          點擊任一張海報圖檔可開啟全螢幕高解析度鑑賞與教學架構檢視
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Poster Item 1 -->
+        <div class="group bg-white p-4 rounded-2xl border border-gold/30 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openImageModal('./3-1美術班課程海報(修).png', '三年級 3-1 美術班課程海報')">
+          <div class="overflow-hidden rounded-xl bg-sand aspect-[3/4] relative">
+            <img src="./3-1美術班課程海報(修).png" alt="三年級 3-1 美術班課程海報" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-ink/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-serif-title text-sm font-bold">
+              🔍 放大檢視原圖
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <div class="font-serif-title font-bold text-ink text-base">三年級 課程海報原稿 (3-1)</div>
+            <div class="text-xs text-gray-500 font-sans mt-0.5">生活美學 ‧ 流動與感官探索</div>
+          </div>
+        </div>
+
+        <!-- Poster Item 2 -->
+        <div class="group bg-white p-4 rounded-2xl border border-gold/30 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openImageModal('./4-1美術班課程海報圖檔.png', '四年級 4-1 美術班課程海報')">
+          <div class="overflow-hidden rounded-xl bg-sand aspect-[3/4] relative">
+            <img src="./4-1美術班課程海報圖檔.png" alt="四年級 4-1 美術班課程海報" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-ink/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-serif-title text-sm font-bold">
+              🔍 放大檢視原圖
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <div class="font-serif-title font-bold text-ink text-base">四年級 課程海報原稿 (4-1)</div>
+            <div class="text-xs text-gray-500 font-sans mt-0.5">造形色彩 ‧ 光陰與故事觀察</div>
+          </div>
+        </div>
+
+        <!-- Poster Item 3 -->
+        <div class="group bg-white p-4 rounded-2xl border border-gold/30 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openImageModal('./6-1美術班課程地圖(修).png', '六年級 6-1 美術班課程地圖')">
+          <div class="overflow-hidden rounded-xl bg-sand aspect-[3/4] relative">
+            <img src="./6-1美術班課程地圖(修).png" alt="六年級 6-1 美術班課程地圖" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-ink/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-serif-title text-sm font-bold">
+              🔍 放大檢視原圖
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <div class="font-serif-title font-bold text-ink text-base">六年級 課程地圖修訂稿 (6-1)</div>
+            <div class="text-xs text-gray-500 font-sans mt-0.5">造形色彩 ‧ 幾何與秩序空間</div>
+          </div>
+        </div>
+
+        <!-- Poster Item 4 -->
+        <div class="group bg-white p-4 rounded-2xl border border-gold/30 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openImageModal('./6-1美術班課程海報圖檔2.png', '六年級 6-1 美術班課程海報圖檔2')">
+          <div class="overflow-hidden rounded-xl bg-sand aspect-[3/4] relative">
+            <img src="./6-1美術班課程海報圖檔2.png" alt="六年級 6-1 美術班課程海報圖檔2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-ink/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-serif-title text-sm font-bold">
+              🔍 放大檢視原圖
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <div class="font-serif-title font-bold text-ink text-base">六年級 課程海報圖檔 A (6-1)</div>
+            <div class="text-xs text-gray-500 font-sans mt-0.5">當代光影與黃金比例美學</div>
+          </div>
+        </div>
+
+        <!-- Poster Item 5 -->
+        <div class="group bg-white p-4 rounded-2xl border border-gold/30 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="openImageModal('./6-2美術班課程海報圖檔2.png', '六年級 6-2 美術班課程海報圖檔2')">
+          <div class="overflow-hidden rounded-xl bg-sand aspect-[3/4] relative">
+            <img src="./6-2美術班課程海報圖檔2.png" alt="六年級 6-2 美術班課程海報圖檔2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-ink/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-serif-title text-sm font-bold">
+              🔍 放大檢視原圖
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <div class="font-serif-title font-bold text-ink text-base">六年級 課程海報圖檔 B (6-2)</div>
+            <div class="text-xs text-gray-500 font-sans mt-0.5">社會雕塑與超現實夢境拼貼</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink text-white py-14 border-t border-gold/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        
+        <div class="md:col-span-8 space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="ink-stamp border-white text-white px-2 py-0.5 text-sm">藝融白川</span>
+            <span class="font-serif-title text-xl font-bold tracking-wide">國小藝術才能班課程美學網</span>
+          </div>
+          <p class="text-xs text-gray-400 font-sans leading-relaxed max-w-2xl">
+            本課程網站由 **高玉娟 老師** 研發設計與教學實踐。結合東方墨韻、現代藝術鑑賞、SEL 社會情緒學習與校園公共策展，落實藝術才能班美學培育。
+          </p>
+        </div>
+
+        <div class="md:col-span-4 md:text-right space-y-2 text-xs text-gray-400 font-serif-title">
+          <div>嘉義市大同國小 藝術才能班 著作權所有</div>
+          <div>Course Designed & Authored by Teacher Kao Yu-Chuan</div>
+          <div class="pt-2 text-gold">© 2026 Aesthetics in Life & Form-Color. All rights reserved.</div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- COURSE UNIT DETAIL MODAL -->
+  <div id="course-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-gold/40 relative p-6 sm:p-8 space-y-6">
+      
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-sand text-gray-600 hover:text-crimson hover:bg-goldlight/50 flex items-center justify-center text-lg font-bold transition-all">
+        ✕
+      </button>
+
+      <!-- Modal Content Header -->
+      <div class="space-y-3 border-b border-sand pb-4">
+        <div class="flex flex-wrap items-center gap-2" id="modal-badges">
+          <!-- Dynamic Badges -->
+        </div>
+        <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-ink" id="modal-title">
+          單元名稱
+        </h2>
+        <div class="text-xs text-gray-500 font-serif-title" id="modal-subtitle">
+          課程單元代碼與領域
+        </div>
+      </div>
+
+      <!-- Modal Body Sections -->
+      <div class="space-y-6 text-sm text-gray-700 font-sans">
+        
+        <!-- Section: Overview -->
+        <div class="space-y-2">
+          <h4 class="font-serif-title font-bold text-base text-crimson flex items-center gap-2">
+            📌 教學綱要與設計核心
+          </h4>
+          <p class="leading-relaxed bg-sand/40 p-4 rounded-xl text-xs sm:text-sm text-gray-800" id="modal-desc">
+            描述內容
+          </p>
+        </div>
+
+        <!-- Section: Artists & Masters -->
+        <div class="space-y-2">
+          <h4 class="font-serif-title font-bold text-base text-crimson flex items-center gap-2">
+            🎨 大師對照與藝術鑑賞
+          </h4>
+          <div class="bg-sand/40 p-4 rounded-xl text-xs sm:text-sm text-gray-800" id="modal-artists">
+            藝術家資訊
+          </div>
+        </div>
+
+        <!-- Section: Theory & SEL -->
+        <div class="space-y-2">
+          <h4 class="font-serif-title font-bold text-base text-crimson flex items-center gap-2">
+            🧠 教學理論與 SEL 學習重點
+          </h4>
+          <div class="bg-sand/40 p-4 rounded-xl text-xs sm:text-sm text-gray-800" id="modal-theory">
+            理論資訊
+          </div>
+        </div>
+
+        <!-- Section: Evaluation & Output -->
+        <div class="space-y-2">
+          <h4 class="font-serif-title font-bold text-base text-crimson flex items-center gap-2">
+            🏆 學習產出與雙軌評量方式
+          </h4>
+          <div class="bg-sand/40 p-4 rounded-xl text-xs sm:text-sm text-gray-800" id="modal-eval">
+            評量細節
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-4 border-t border-sand flex justify-end">
+        <button onclick="closeModal()" class="px-6 py-2.5 rounded-xl bg-ink text-white font-serif-title text-xs font-bold hover:bg-crimson transition-colors">
+          關閉視窗 (Close)
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- IMAGE LIGHTBOX MODAL WITH INTERACTIVE ZOOM & PAN -->
+  <div id="image-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-2 sm:p-4 overflow-hidden" onclick="closeImageModal()">
+    
+    <!-- Modal Container -->
+    <div class="relative max-w-5xl w-full h-[92vh] bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-gold/40 flex flex-col justify-between overflow-hidden" onclick="event.stopPropagation()">
+      
+      <!-- Top Action Bar (Controls & Scale Status) -->
+      <div class="flex items-center justify-between px-6 py-4 bg-sand/60 border-b border-gold/30 shrink-0 z-20">
+        <div class="flex items-center gap-3">
+          <span class="ink-stamp px-2 py-0.5 text-xs text-crimson border-crimson">海報鑑賞</span>
+          <h3 id="lightbox-caption" class="font-serif-title text-sm sm:text-base font-bold text-ink truncate max-w-md">海報標題</h3>
+        </div>
+
+        <!-- Zoom Control Toolbar -->
+        <div class="flex items-center gap-2">
+          <!-- Current Scale Indicator -->
+          <span id="zoom-level-badge" class="px-2.5 py-1 rounded-lg bg-white border border-gold/30 text-xs font-mono font-bold text-gray-700 shadow-xs mr-1">
+            100%
+          </span>
+
+          <!-- Zoom In Button -->
+          <button onclick="zoomImage(0.25)" title="放大 (Zoom In)" class="w-9 h-9 rounded-xl bg-white hover:bg-goldlight text-gray-800 border border-gold/40 flex items-center justify-center font-bold text-base shadow-sm hover:scale-105 transition-all">
+            🔍+
+          </button>
+
+          <!-- Zoom Out Button -->
+          <button onclick="zoomImage(-0.25)" title="縮小 (Zoom Out)" class="w-9 h-9 rounded-xl bg-white hover:bg-goldlight text-gray-800 border border-gold/40 flex items-center justify-center font-bold text-base shadow-sm hover:scale-105 transition-all">
+            🔍-
+          </button>
+
+          <!-- Reset Zoom Button -->
+          <button onclick="resetZoom()" title="重置比例 (Reset)" class="px-3 h-9 rounded-xl bg-sand hover:bg-goldlight text-xs font-serif-title font-bold text-ink border border-gold/40 flex items-center justify-center shadow-sm transition-all">
+            🔄 重置
+          </button>
+
+          <!-- Close Modal Button -->
+          <button onclick="closeImageModal()" title="關閉 (Close Esc)" class="w-9 h-9 rounded-xl bg-ink hover:bg-crimson text-white flex items-center justify-center font-bold text-base shadow-sm transition-colors ml-2">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Image Viewport Area with Overflow Hidden and Grab Cursor -->
+      <div id="lightbox-viewport" class="relative flex-1 w-full h-full overflow-hidden bg-sand/30 flex items-center justify-center cursor-grab active:cursor-grabbing select-none">
+        
+        <!-- Zoomable & Printable Image -->
+        <img id="lightbox-img" src="" alt="海報原圖" class="max-w-full max-h-full object-contain transition-transform duration-100 ease-out origin-center rounded-lg shadow-md pointer-events-none">
+        
+        <!-- Floating Helper Prompt (Fade out when zoomed) -->
+        <div id="zoom-helper" class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-ink/75 text-white text-xs px-4 py-1.5 rounded-full backdrop-blur pointer-events-none transition-opacity duration-300 font-sans">
+          💡 滾輪/雙擊可放大縮小 ‧ 拖曳滑鼠檢視局部細節
+        </div>
+      </div>
+
+      <!-- Bottom Hint Bar -->
+      <div class="px-6 py-2.5 bg-sand/40 border-t border-gold/20 text-center text-xs text-gray-500 font-serif-title shrink-0">
+        嘉義市大同國小藝術才能班 ‧ 「藝融白川」校本美學課程海報原稿特展 (可自由縮小/放大進行局部細節檢視)
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PDF DIAGNOSTIC REPORT MODAL & PRINT VIEW -->
+  <div id="pdf-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-2 sm:p-4 overflow-y-auto" onclick="closePDFModal()">
+    <div class="relative max-w-4xl w-full bg-white rounded-3xl shadow-2xl border border-gold/40 my-8 overflow-hidden flex flex-col justify-between" onclick="event.stopPropagation()">
+      
+      <!-- Top Action Bar -->
+      <div class="flex items-center justify-between px-6 py-4 bg-sand/60 border-b border-gold/30 shrink-0">
+        <div class="flex items-center gap-3">
+          <span class="ink-stamp px-2 py-0.5 text-xs text-crimson border-crimson">PDF 檢視</span>
+          <h3 class="font-serif-title text-base font-bold text-ink">全人藝術教育實務自評與診斷報告</h3>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="triggerDirectPDFDownload()" class="px-4 py-2 rounded-xl bg-crimson hover:bg-crimson/90 text-white font-serif-title text-xs font-bold shadow-sm transition-all flex items-center gap-1.5">
+            📥 直接下載 PDF 檔
+          </button>
+          <button onclick="triggerPrintWindow()" class="px-3 py-2 rounded-xl bg-sand hover:bg-goldlight text-ink border border-gold/40 font-serif-title text-xs font-bold transition-colors flex items-center gap-1">
+            🖨️ 原生列印 / 另存為 PDF
+          </button>
+          <button onclick="closePDFModal()" class="w-8 h-8 rounded-full bg-ink text-white hover:bg-crimson flex items-center justify-center text-sm font-bold transition-colors ml-2">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- PDF Page Render Body Area -->
+      <div class="p-6 sm:p-10 overflow-y-auto max-h-[75vh] bg-sand/20">
+        <div id="pdf-report-sheet" class="bg-white p-8 sm:p-12 rounded-2xl shadow-md border border-gold/30 text-gray-800 space-y-6 max-w-3xl mx-auto font-sans">
+          
+          <!-- Official School Header -->
+          <div class="text-center space-y-2 border-b-2 border-crimson pb-6">
+            <div class="flex items-center justify-center gap-3">
+              <span class="ink-stamp text-crimson border-crimson px-2.5 py-0.5 text-base">嘉義市大同國小</span>
+              <span class="font-serif-title text-xl sm:text-2xl font-bold tracking-wide text-ink">藝術才能班 ‧ 課程美學網</span>
+            </div>
+            <h1 class="font-serif-title text-2xl sm:text-3xl font-black text-crimson tracking-tight pt-1">
+              全人藝術教育實務自評與診斷報告書
+            </h1>
+            <div class="text-xs text-gray-500 font-serif-title">
+              依據 Colbert 與 Taunton (1992) 適當藝術教育實務與當代全人藝術教育三大取向檢核
+            </div>
+          </div>
+
+          <!-- Section: Basic Information Table -->
+          <div class="bg-sand/40 p-4 rounded-xl border border-gold/30 text-xs font-serif-title grid grid-cols-2 gap-3">
+            <div><strong class="text-gray-700">授課教師：</strong><span id="pdf-teacher-name" class="font-bold text-ink">高玉娟 老師</span></div>
+            <div><strong class="text-gray-700">評鑑學期：</strong><span id="pdf-term-name" class="font-bold text-ink">114 學年度下學期</span></div>
+            <div><strong class="text-gray-700">授課科目：</strong><span id="pdf-subject-name" class="font-bold text-ink">生活美學 / 造形色彩</span></div>
+            <div><strong class="text-gray-700">評鑑單元：</strong><span id="pdf-unit-name" class="font-bold text-ink">藝融白川 6 道課程</span></div>
+            <div class="col-span-2 border-t border-gold/20 pt-2"><strong class="text-gray-700">評鑑日期：</strong><span id="pdf-date-name" class="text-gray-600">2026/08/18</span></div>
+          </div>
+
+          <!-- Section: Score & Level Box -->
+          <div class="bg-paper p-6 rounded-2xl border-2 border-crimson/30 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="text-center sm:text-left space-y-1">
+              <div class="text-xs text-gray-500 font-serif-title">適當實務達成率總分</div>
+              <div class="text-4xl font-serif-title font-black text-crimson" id="pdf-score-val">
+                85 / 85 分
+              </div>
+              <div class="text-xs font-bold text-gray-600" id="pdf-pct-val">達成率：100%</div>
+            </div>
+            <div class="text-center sm:text-right space-y-1 bg-white p-4 rounded-xl border border-gold/30 shrink-0">
+              <div class="text-xs text-amber-800 font-bold">全人藝術實踐等級</div>
+              <div class="font-serif-title font-black text-lg text-amber-900" id="pdf-badge-val">
+                🌟 典範全人藝術導師
+              </div>
+              <div class="text-[11px] text-gray-500 max-w-xs" id="pdf-desc-val">
+                教學實務高度符合 Colbert & Taunton 全人指標！
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: 17 Items Summary Table -->
+          <div class="space-y-3">
+            <h3 class="font-serif-title font-bold text-sm text-crimson flex items-center gap-1.5">
+              📋 17 項適當實務指標評估明細 (Colbert & Taunton, 1992)
+            </h3>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs border-collapse border border-sand">
+                <thead>
+                  <tr class="bg-sand/60 text-gray-800 font-serif-title">
+                    <th class="p-2 border border-gold/30">指標維度</th>
+                    <th class="p-2 border border-gold/30">核心適當實務說明</th>
+                    <th class="p-2 border border-gold/30 text-center w-16">評分</th>
+                  </tr>
+                </thead>
+                <tbody id="pdf-table-body" class="text-gray-700">
+                  <!-- Generated Dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Section: Open Reflection -->
+          <div class="space-y-3 pt-2">
+            <h3 class="font-serif-title font-bold text-sm text-crimson flex items-center gap-1.5">
+              💭 教學省思與專業成長紀錄
+            </h3>
+            <div class="space-y-2 text-xs">
+              <div class="bg-sand/30 p-3 rounded-xl border border-gold/20">
+                <strong class="text-gray-800 block mb-1">1. 最成功的「適當的實務」執行範例：</strong>
+                <p id="pdf-reflect1-text" class="text-gray-700 whitespace-pre-wrap">（未填寫）</p>
+              </div>
+              <div class="bg-sand/30 p-3 rounded-xl border border-gold/20">
+                <strong class="text-gray-800 block mb-1">2. 需要警惕與改善的「不適當實務」省思：</strong>
+                <p id="pdf-reflect2-text" class="text-gray-700 whitespace-pre-wrap">（未填寫）</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Official Signatures -->
+          <div class="pt-6 border-t border-gray-300 grid grid-cols-2 gap-6 text-xs font-serif-title text-gray-600">
+            <div>
+              <div>授課教師簽章：__________________</div>
+              <div class="text-[10px] text-gray-400 mt-1">Signature of Educator</div>
+            </div>
+            <div class="text-right">
+              <div>校本美學研習/檢核備查章</div>
+              <div class="text-[10px] text-gray-400 mt-1">Official Evaluation Stamp</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Data dictionary for Course Modals
+    const courseDetails = {
+      'g3-1': {
+        title: '帝展榮光：陳澄波洋紅與綠蔭',
+        subtitle: '三年級 ‧ 校訂課程【生活美學】上學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-crimson text-white text-xs font-bold">三年級上</span>', '<span class="px-2.5 py-1 rounded bg-red-100 text-red-800 text-xs font-bold">文化 Culture</span>'],
+        desc: '本單元引導三年級孩子認識臺灣美術史先驅陳澄波先生，重點體驗其代表性的「洋紅」與「南國綠蔭」色彩對比。透過鄉土景緻描繪與色彩熱情，深化孩子對土地人文的連結與感謝。',
+        artists: '<strong>陳澄波 (Chen Cheng-po)</strong>：欣賞《嘉義公園》、《夏日街景》等經典畫作，分析其筆觸自動性與強烈土地情感與熱帶色彩感。',
+        theory: '<strong>Lowenfeld 感官創造理論 & 薩提爾冰山模型 (Satir Iceberg)</strong>：結合 Lowenfeld 象徵期與圖式期感官覺察，並以薩提爾冰山模型引導學生從色彩表現中覺察自我內在感受與情緒。',
+        eval: '50% 定期創作（陳澄波風格鄉土色彩繪畫） + 50% 歷程評量（口頭發表感受、學習歷程檔案、課堂參與觀察）。'
+      },
+      'g3-2': {
+        title: '符號與連繫：Keith Haring 塗鴉牆',
+        subtitle: '三年級 ‧ 校訂課程【生活美學】上學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-crimson text-white text-xs font-bold">三年級上</span>', '<span class="px-2.5 py-1 rounded bg-blue-100 text-blue-800 text-xs font-bold">自我 Self</span>'],
+        desc: '探索美國當代藝術家 Keith Haring 的簡約線條、粗黑輪廓與奔放人物符號。孩子將個人喜怒哀樂轉化為專屬身體動作視覺符號，並集體創作校園塗鴉牆。',
+        artists: '<strong>Keith Haring (凱斯·哈林)</strong>：欣賞紐約地鐵塗鴉藝術、愛與和平動作符號，體驗線條傳達的活力與社會關懷。',
+        theory: '<strong>SEL 社會覺察與社會實踐</strong>：將個人情感符號化，並透過校園塗鴉牆合作實踐，感受藝術與公眾和諧連繫。',
+        eval: '50% 實作表現（個人符號標籤與塗鴉牆創作） + 50% 同儕互評與口頭分享解說。'
+      },
+      'g3-3': {
+        title: '醃漬水墨與梵谷色彩之流',
+        subtitle: '三年級 ‧ 校訂課程【生活美學】上學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-crimson text-white text-xs font-bold">三年級上</span>', '<span class="px-2.5 py-1 rounded bg-blue-100 text-blue-800 text-xs font-bold">自我 Self</span>'],
+        desc: '結合飲食文化的醃漬多媒材實驗，與梵谷旋轉色彩筆觸。學生操作非牛頓流體與水墨擴散實驗，體驗色彩自動性流動與多感官衝擊。',
+        artists: '<strong>梵谷 (Vincent van Gogh)</strong>：欣賞《星夜》、《星空下的咖啡館》，感受流動渦旋筆觸與強烈情感色彩。',
+        theory: '<strong>五感與多媒材實驗</strong>：打破單一繪畫框架，結合觸覺、嗅覺與非牛頓流體物理特性進行感官創造。',
+        eval: '50% 實作表現（非牛頓流體流動色彩繪畫） + 50% 課堂觀察與歷程檔案記錄。'
+      },
+      'g3-4': {
+        title: '水分趣味與 Notan 黑白明暗空間',
+        subtitle: '三年級 ‧ 校訂課程【生活美學】下學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-crimson text-white text-xs font-bold">三年級下</span>', '<span class="px-2.5 py-1 rounded bg-red-100 text-red-800 text-xs font-bold">文化 Culture</span>'],
+        desc: '欣賞現代水墨大師（袁金塔、席德進、鄭問）與宋朝水墨韻味。下學期引入日式 Notan 陰陽明暗空間，操作黑白紙張切割與空間平衡構圖。',
+        artists: '<strong>袁金塔、席德進、鄭問、宋朝水墨畫家</strong>：賞析現代水墨破墨、積墨與拓印美學。',
+        theory: '<strong>Brittain 藝術反思實踐模式（觀察、表現、反思）</strong>：透過 Notan 明暗剪紙建立正負空間思維與生活心智圖走讀。',
+        eval: '50% 實作作品（Notan黑白剪紙與水墨作品） + 50% 作品檔案與口頭反思發表。'
+      },
+      'g4-1': {
+        title: '黑白剪影劇場與微型攝影',
+        subtitle: '四年級 ‧ 部訂課程【造形色彩】上學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-lush text-white text-xs font-bold">四年級上</span>', '<span class="px-2.5 py-1 rounded bg-blue-100 text-blue-800 text-xs font-bold">自我 Self</span>'],
+        desc: '融入 Kara Walker 的黑白剪影藝術進行光影故事劇場編排；同時結合田中達也微型攝影觀點，將文具、蔬菜等日常小物轉化為奇幻敘事場景。',
+        artists: '<strong>Kara Walker & 田中達也 (Tatsuya Tanaka)</strong>：從黑白輪廓戲劇感與微觀世界視角切入創作。',
+        theory: '<strong>SEL 社會覺察與微觀視角轉換</strong>：培養微觀觀察力，建立虛實三度空間表現技巧。',
+        eval: '50% 專題實作（微型攝影作品與剪影劇照） + 50% 同儕互評與歷程對話。'
+      },
+      'g4-2': {
+        title: '實驗水墨與故宮三遠山水',
+        subtitle: '四年級 ‧ 部訂課程【造形色彩】上學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-lush text-white text-xs font-bold">四年級上</span>', '<span class="px-2.5 py-1 rounded bg-red-100 text-red-800 text-xs font-bold">文化 Culture</span>'],
+        desc: '實作潑墨、口吹、拓印與香蕉水轉印等實驗水墨技法；並鑑賞故宮經典巨碑山水（范寬《谿山行旅圖》、郭熙《早春圖》、李唐《萬壑松風圖》），解析「高遠、平遠、深遠」三遠空間。',
+        artists: '<strong>范寬、郭熙、李唐 (故宮三遠大師)</strong>：體驗中國山水畫觀山觀水之精神哲學與空間美學。',
+        theory: '<strong>三度空間虛實表現理論</strong>：結合自由實驗水墨技法與古代嚴謹山水構圖之平衡。',
+        eval: '50% 定期創作（三遠山水實驗水墨拼貼） + 50% 課堂鑑賞發表與學習檔案。'
+      },
+      'g4-3': {
+        title: '水牛群像與諸羅生態微型聯展',
+        subtitle: '四年級 ‧ 部訂課程【造形色彩】下學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-lush text-white text-xs font-bold">四年級下</span>', '<span class="px-2.5 py-1 rounded bg-green-100 text-green-800 text-xs font-bold">生態 Ecology</span>'],
+        desc: '深讀臺灣前輩畫家林玉山國寶級作品《水牛群像》與《蓮池》膠彩藝術。孩子走出教室進行大同校園植物寫生，並策劃「諸羅生態微型聯展」。',
+        artists: '<strong>林玉山 (Lin Yu-shan)</strong>：學習寫實寫生態度與膠彩畫金箔礦物質感。',
+        theory: '<strong>Marschalek 創造注意力轉移理論</strong>：繪製生態保育圖鑑，引導專注細節觀察與環境永續關懷。',
+        eval: '50% 聯展實作（生態寫生與膠彩畫） + 50% 課堂觀察與策展同儕互評。'
+      },
+      'g4-4': {
+        title: '同安船與《千里江山圖》青綠解碼',
+        subtitle: '四年級 ‧ 部訂課程【造形色彩】下學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-lush text-white text-xs font-bold">四年級下</span>', '<span class="px-2.5 py-1 rounded bg-red-100 text-red-800 text-xs font-bold">文化 Culture</span>'],
+        desc: '解碼宋代王希孟《千里江山圖》青綠山水礦物色彩層次，搭配同安船海洋歷史文化印記，並進行春之鹽粒結晶與蠟筆阻擋色彩實驗。',
+        artists: '<strong>王希孟 (青綠山水)</strong>：探索青綠山水石青、石綠顏料厚重璀璨之視覺張力。',
+        theory: '<strong>Schneider & Shiffrin 自動化流暢表達模型</strong>：透過鹽粒與 wax-resist 阻擋實驗，建立直覺色彩流暢掌控力。',
+        eval: '50% 定期作品（青綠海洋同安船創作） + 50% 發表與歷程檔案。'
+      },
+      'g6-1': {
+        title: '黃金比例與艾雪錯視空間',
+        subtitle: '六年級 ‧ 部訂課程【造形色彩】上學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-celadon text-white text-xs font-bold">六年級上</span>', '<span class="px-2.5 py-1 rounded bg-blue-100 text-blue-800 text-xs font-bold">自我 Self</span>'],
+        desc: '跨域結合數學美學，剖析黃金比例 (1:1.618) 矩形與斐波那契螺旋線。同時賞析 M.C. Escher 錯視空間，創作鑲嵌圖案與不可能空間構圖。',
+        artists: '<strong>M.C. Escher (艾雪)</strong>：研究連續鑲嵌、維度轉換與空間矛盾錯視美學。',
+        theory: '<strong>數學與美學跨域整合</strong>：培養幾何秩序感與邏輯抽象表現能力。',
+        eval: '50% 專題作品（黃金螺旋與錯視圖形） + 50% 數學美學歷程紀錄與同儕互評。'
+      },
+      'g6-2': {
+        title: '當代光影、塞尚幾何與家鄉地景',
+        subtitle: '六年級 ‧ 部訂課程【造形色彩】上學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-celadon text-white text-xs font-bold">六年級上</span>', '<span class="px-2.5 py-1 rounded bg-red-100 text-red-800 text-xs font-bold">文化 Culture</span>'],
+        desc: '體驗 Olafur Eliasson 當代光影裝置與空間感受；分析塞尚（Cézanne）圓柱、球體、圓錐體幾何塊面；並傳承石川欽一郎英式透明水彩，重現嘉義地方色彩。',
+        artists: '<strong>Olafur Eliasson、Cézanne (塞尚)、石川欽一郎</strong>：結合當代光影、幾何結構與傳統透明水彩。',
+        theory: '<strong>光影採集模型與地方色彩思辨</strong>：從自然光影記錄到家鄉景物情感再現。',
+        eval: '50% 定期創作（英式透明水彩家鄉寫生） + 50% 口頭發表與作品檔案。'
+      },
+      'g6-3': {
+        title: '波依斯「社會雕塑」與超現實夢境',
+        subtitle: '六年級 ‧ 部訂課程【造形色彩】下學期 ｜ 2 節/週',
+        badges: ['<span class="px-2.5 py-1 rounded bg-celadon text-white text-xs font-bold">六年級下</span>', '<span class="px-2.5 py-1 rounded bg-blue-100 text-blue-800 text-xs font-bold">自我 Self</span>'],
+        desc: '實踐波依斯 (Joseph Beuys)「人人都是藝術家」與「社會雕塑」理念，於大同校園「禮運樓」公共空間進行微型策展展演；並利用多媒材拼貼構築超現實夢境。',
+        artists: '<strong>Joseph Beuys (約瑟夫·波依斯) & 超現實主義畫家</strong>：探索公共行動藝術與潛意識生命敘事。',
+        theory: '<strong>日常行動即藝術 & 自傳式生命敘事模型</strong>：將平面設計原理與色彩構成運用於公共空間策展與個人回憶生命地圖。',
+        eval: '50% 畢業策展展演 + 50% 自傳式生命檔案與同儕互動反思。'
+      }
+    };
+
+    // Modal Functions
+    function openModal(id) {
+      const data = courseDetails[id];
+      if (!data) return;
+
+      document.getElementById('modal-badges').innerHTML = data.badges.join('');
+      document.getElementById('modal-title').innerText = data.title;
+      document.getElementById('modal-subtitle').innerText = data.subtitle;
+      document.getElementById('modal-desc').innerText = data.desc;
+      document.getElementById('modal-artists').innerHTML = data.artists;
+      document.getElementById('modal-theory').innerHTML = data.theory;
+      document.getElementById('modal-eval').innerHTML = data.eval;
+
+      const modal = document.getElementById('course-modal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('course-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Image Lightbox Zoom & Pan State Variables
+    let currentScale = 1;
+    const minScale = 0.5;
+    const maxScale = 4.0;
+    let isDragging = false;
+    let startX = 0, startY = 0;
+    let translateX = 0, translateY = 0;
+
+    function openImageModal(src, caption) {
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      document.getElementById('lightbox-caption').innerText = caption;
+
+      resetZoom();
+
+      const modal = document.getElementById('image-modal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('image-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function resetZoom() {
+      currentScale = 1;
+      translateX = 0;
+      translateY = 0;
+      applyTransform();
+    }
+
+    function zoomImage(delta) {
+      currentScale = Math.min(Math.max(minScale, currentScale + delta), maxScale);
+      applyTransform();
+    }
+
+    function applyTransform() {
+      const img = document.getElementById('lightbox-img');
+      const badge = document.getElementById('zoom-level-badge');
+      const helper = document.getElementById('zoom-helper');
+
+      if (!img || !badge || !helper) return;
+
+      img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
+      badge.innerText = `${Math.round(currentScale * 100)}%`;
+
+      if (currentScale > 1) {
+        helper.style.opacity = '0';
+      } else {
+        helper.style.opacity = '1';
+      }
+    }
+
+    // Attach Zoom & Drag Event Listeners on DOM load
+    document.addEventListener('DOMContentLoaded', () => {
+      const viewport = document.getElementById('lightbox-viewport');
+      if (!viewport) return;
+
+      // Mouse Wheel Zoom
+      viewport.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const delta = e.deltaY < 0 ? 0.25 : -0.25;
+        zoomImage(delta);
+      }, { passive: false });
+
+      // Double Click to Toggle Zoom
+      viewport.addEventListener('dblclick', () => {
+        if (currentScale > 1.2) {
+          resetZoom();
+        } else {
+          currentScale = 2.5;
+          applyTransform();
+        }
+      });
+
+      // Mouse Drag & Pan Logic
+      viewport.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        applyTransform();
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+
+      // Touch Drag & Pan Support for Mobile
+      viewport.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 1) {
+          isDragging = true;
+          startX = e.touches[0].clientX - translateX;
+          startY = e.touches[0].clientY - translateY;
+        }
+      }, { passive: true });
+
+      viewport.addEventListener('touchmove', (e) => {
+        if (!isDragging || e.touches.length > 1) return;
+        translateX = e.touches[0].clientX - startX;
+        translateY = e.touches[0].clientY - startY;
+        applyTransform();
+      }, { passive: true });
+
+      viewport.addEventListener('touchend', () => {
+        isDragging = false;
+      });
+    });
+
+    // Keyboard Accessibility for Modals (Esc to close)
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+        closeImageModal();
+      }
+    });
+
+    // Mobile Menu Toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Filter Logic
+    let activeGrade = 'all';
+    let activeTheme = 'all';
+    let searchQuery = '';
+
+    const gradeBtns = document.querySelectorAll('.grade-filter-btn');
+    const themeBtns = document.querySelectorAll('.theme-filter-btn');
+    const searchInput = document.getElementById('course-search');
+    const cards = document.querySelectorAll('.course-card');
+
+    gradeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        gradeBtns.forEach(b => {
+          b.classList.remove('bg-crimson', 'text-white', 'shadow-sm');
+          b.classList.add('bg-sand', 'text-gray-700');
+        });
+        btn.classList.remove('bg-sand', 'text-gray-700');
+        btn.classList.add('bg-crimson', 'text-white', 'shadow-sm');
+
+        activeGrade = btn.getAttribute('data-grade');
+        filterCards();
+      });
+    });
+
+    themeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        themeBtns.forEach(b => {
+          b.classList.remove('bg-ink', 'text-white');
+          b.classList.add('bg-sand');
+        });
+        btn.classList.remove('bg-sand');
+        btn.classList.add('bg-ink', 'text-white');
+
+        activeTheme = btn.getAttribute('data-theme');
+        filterCards();
+      });
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      filterCards();
+    });
+
+    function filterCards() {
+      cards.forEach(card => {
+        const cardGrade = card.getAttribute('data-grade');
+        const cardTheme = card.getAttribute('data-theme');
+        const cardKeywords = card.getAttribute('data-keywords').toLowerCase();
+
+        const matchGrade = (activeGrade === 'all' || cardGrade === activeGrade);
+        const matchTheme = (activeTheme === 'all' || cardTheme === activeTheme);
+        const matchSearch = (searchQuery === '' || cardKeywords.includes(searchQuery));
+
+        if (matchGrade && matchTheme && matchSearch) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Quiz Functions
+    function calcQuizScore() {
+      let total = 0;
+      for (let i = 1; i <= 17; i++) {
+        const radios = document.getElementsByName('q' + i);
+        for (let r of radios) {
+          if (r.checked) {
+            total += parseInt(r.value, 10);
+            break;
+          }
+        }
+      }
+
+      const scoreEl = document.getElementById('quiz-total-score');
+      const barEl = document.getElementById('quiz-score-bar');
+      const pctEl = document.getElementById('quiz-score-pct');
+      const badgeEl = document.getElementById('quiz-level-badge');
+      const descEl = document.getElementById('quiz-level-desc');
+
+      const pct = Math.round((total / 85) * 100);
+      scoreEl.innerHTML = `${total} <span class="text-sm font-normal text-gray-500">/ 85 分</span>`;
+      barEl.style.width = pct + '%';
+      pctEl.innerText = `達成率：${pct}%`;
+
+      if (total >= 80) {
+        badgeEl.innerText = '🌟 典範全人藝術導師';
+        descEl.innerText = '您的教學實務高度符合 Colbert & Taunton 全人發展指標，兼顧兒童中心、學科結構與社會議題！';
+      } else if (total >= 65) {
+        badgeEl.innerText = '🎨 創新美學實踐者';
+        descEl.innerText = '您具備優異的全人藝術教育觀念，部分細節（如學生自主清理或對話提問）可再深化提升！';
+      } else if (total >= 50) {
+        badgeEl.innerText = '🌱 潛力探索教育者';
+        descEl.innerText = '您已具備良好的兒童關懷，建議加強藝術作品討論與開放性結果規劃！';
+      } else {
+        badgeEl.innerText = '🔍 轉型省思學習者';
+        descEl.innerText = '建議對照「不適當實務警惕清單」，調整課程使其更加符合兒童興趣與發展需求。';
+      }
+    }
+
+    function toggleInappropriateList() {
+      const card = document.getElementById('inappropriate-card');
+      card.classList.toggle('hidden');
+    }
+
+    function copyQuizReport() {
+      const teacher = document.getElementById('quiz-teacher').value || '未填寫';
+      const term = document.getElementById('quiz-term').value || '未填寫';
+      const subject = document.getElementById('quiz-subject').value || '未填寫';
+      const unit = document.getElementById('quiz-unit').value || '未填寫';
+      const scoreText = document.getElementById('quiz-total-score').innerText;
+      const level = document.getElementById('quiz-level-badge').innerText;
+      const reflect1 = document.getElementById('quiz-reflect1').value || '（未填寫）';
+      const reflect2 = document.getElementById('quiz-reflect2').value || '（未填寫）';
+
+      const report = `【藝術教育實務自評診斷報告】
+授課教師：${teacher}
+學年度/學期：${term}
+授課科目：${subject}
+評鑑單元：${unit}
+----------------------------------------
+適當實務自評得分：${scoreText}
+全人實踐等級：${level}
+
+【教學省思與專業成長】
+1. 最成功的「適當的實務」：
+${reflect1}
+
+2. 需要警惕與改善的項目：
+${reflect2}
+
+（依據 Colbert 與 Taunton 1992 理理與當代全人藝術教育三取向產出）`;
+
+      navigator.clipboard.writeText(report).then(() => {
+        alert('✅ 自評診斷報告已成功複製到剪貼簿！');
+      }).catch(() => {
+        alert('報告內容：\n\n' + report);
+      });
+    }
+
+    // PDF Report Generator Functions
+    function downloadPDFReport() {
+      // Populate PDF Template with current form data
+      document.getElementById('pdf-teacher-name').innerText = document.getElementById('quiz-teacher').value || '高玉娟 老師';
+      document.getElementById('pdf-term-name').innerText = document.getElementById('quiz-term').value || '114 學年度下學期';
+      document.getElementById('pdf-subject-name').innerText = document.getElementById('quiz-subject').value || '生活美學 / 造形色彩';
+      document.getElementById('pdf-unit-name').innerText = document.getElementById('quiz-unit').value || '藝融白川 6 道課程';
+
+      const now = new Date();
+      document.getElementById('pdf-date-name').innerText = `${now.getFullYear()}/${(now.getMonth()+1).toString().padStart(2,'0')}/${now.getDate().toString().padStart(2,'0')}`;
+
+      document.getElementById('pdf-score-val').innerText = document.getElementById('quiz-total-score').innerText;
+      document.getElementById('pdf-pct-val').innerText = document.getElementById('quiz-score-pct').innerText;
+      document.getElementById('pdf-badge-val').innerText = document.getElementById('quiz-level-badge').innerText;
+      document.getElementById('pdf-desc-val').innerText = document.getElementById('quiz-level-desc').innerText;
+
+      document.getElementById('pdf-reflect1-text').innerText = document.getElementById('quiz-reflect1').value || '在水墨與色彩流動單元中，提供開放性結果與充分時間，激發學生獨立表現特質。';
+      document.getElementById('pdf-reflect2-text').innerText = document.getElementById('quiz-reflect2').value || '持續警惕避免隨教師喜好主導材料，確保材料容易操作並開放自由選擇。';
+
+      // Build 17 items table
+      const itemNames = [
+        '課程目標：鼓勵兒童發展與投入藝術',
+        '課程目標：明確範圍程序與適齡宗旨目標',
+        '課程目標：覺察發展標記與欣賞個別表現',
+        '課程內容：創作、知覺與回應活動均衡組合',
+        '課程內容：基於兒童興趣、能力與需求',
+        '課程內容：「結果開放」規劃與自我表現',
+        '材料環境：材料容易操作、安全符合需求',
+        '材料環境：方便自動自發藝術活動',
+        '材料環境：鼓勵兒童照顧材料與清理環境',
+        '跨領域連結：運用其它領域概念技能整合教學',
+        '創作過程：遊戲化支持環境與給予足夠時間',
+        '創作過程：鼓勵創造自己意象與理念',
+        '作品展示：以兒童眼睛高度展示所有作品',
+        '作品展示：利用展示引導反省與積極品質討論',
+        '鑑賞回應：描述解釋感受而非單向演講',
+        '當代全人教育：統合學生、學科與議題三取向',
+        '專業成長：持續紀錄適當與警惕實務'
+      ];
+
+      let tbodyHTML = '';
+      for (let i = 1; i <= 17; i++) {
+        let score = 5;
+        const radios = document.getElementsByName('q' + i);
+        for (let r of radios) {
+          if (r.checked) { score = r.value; break; }
+        }
+        tbodyHTML += `
+          <tr class="${i % 2 === 0 ? 'bg-sand/20' : 'bg-white'}">
+            <td class="p-2 border border-gold/20 font-bold text-gray-700">指標 ${i}</td>
+            <td class="p-2 border border-gold/20">${itemNames[i-1]}</td>
+            <td class="p-2 border border-gold/20 text-center font-bold text-crimson">${score} 分</td>
+          </tr>
+        `;
+      }
+      document.getElementById('pdf-table-body').innerHTML = tbodyHTML;
+
+      // Open PDF Preview Modal
+      const modal = document.getElementById('pdf-modal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePDFModal() {
+      const modal = document.getElementById('pdf-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function triggerDirectPDFDownload() {
+      const element = document.getElementById('pdf-report-sheet');
+      const teacher = document.getElementById('quiz-teacher').value || '高玉娟老師';
+      
+      if (typeof html2pdf !== 'undefined') {
+        const opt = {
+          margin:       [8, 8, 8, 8],
+          filename:     `嘉義市大同國小_藝術教育實務自評報告_${teacher}.pdf`,
+          image:        { type: 'jpeg', quality: 0.98 },
+          html2canvas:  { scale: 2, useCORS: true },
+          jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(element).save();
+      } else {
+        window.print();
+      }
+    }
+
+    function triggerPrintWindow() {
+      window.print();
+    }
+
+    // ==========================================
+    // CHEN CHENG-PO INTERACTIVE QUIZ MODULE LOGIC
+    // ==========================================
+    const chenQuizData = [
+      {
+        id: 1,
+        question: "1. 藝術家陳澄波以哪一幅油彩作品入選第七回日本帝國美術展覽會（帝展），開創臺灣西洋畫家入選帝展之先河？",
+        options: ["《嘉義街外》", "《淡水夕照》", "《我的家庭》", "《溫陵媽祖廟》"],
+        answer: 0,
+        explanation: "陳澄波於 1926 年以《嘉義街外》入選日本帝展，成為第一位以油畫入選帝展的臺灣畫家。"
+      },
+      {
+        id: 2,
+        question: "2. 在作品《我的家庭》中，陳澄波採用了兒童畫常見的「展開式構圖」將圓桌畫成半圓形，並將書籍信件全數攤開。這種構圖的主要用意為何？",
+        options: [
+          "畫家當時尚未掌握透視法則",
+          "屬於個人風格的選擇，用以呈現生命思維與向夫人張捷致敬的紀念碑式氛圍",
+          "為了節省畫布空間",
+          "模仿西方文藝復興時期的單一焦點透視"
+        ],
+        answer: 1,
+        explanation: "受過嚴格西畫訓練的畫家並非不懂透視，而是選擇最能表達內心情感與思維的「恆定性」與生命對話風格。"
+      },
+      {
+        id: 3,
+        question: "3. 在分析藝術思維時，以哪一個古代文明的壁畫「只畫側面以追求永恆恆定性」來對比陳澄波打破透視的藝術風格？",
+        options: ["古希臘", "古埃及", "古羅馬", "美索不達米亞"],
+        answer: 1,
+        explanation: "以古埃及人追求永恆不變的「恆定性（正面肩膀＋側面臉龐）」為例，說明藝術形式是為了傳達內在思維與本質，而非單純寫實。"
+      },
+      {
+        id: 4,
+        question: "4. 哪一位重要啟蒙老師的來信與專著，曾出現在陳澄波《我的家庭》畫作中的桌面上？",
+        options: ["鹽月桃甫", "梅原龍三郎", "石川欽一郎", "岡田三郎助"],
+        answer: 2,
+        explanation: "石川欽一郎是陳澄波在臺北國語學校時期的啟蒙導師，也是臺灣現代西洋美術教育的重要推手。"
+      },
+      {
+        id: 5,
+        question: "5. 陳澄波描繪淡水景緻的作品（如俯瞰全景之作）中，展現了極具臺灣在地風土特色的色彩與建築對比，下列何者為其核心特徵？",
+        options: [
+          "黑白對比、冷暖交織",
+          "山海並呈、紅綠並置、土陽雜陳",
+          "點描光影、印象捕捉",
+          "純粹抽象、無焦點散點"
+        ],
+        answer: 1,
+        explanation: "陳澄波筆下的淡水融匯了山與海、紅瓦與綠蔭、閩南土磚房與西方洋樓教堂（土陽雜陳），展現熱烈豐富的南國風土。"
+      },
+      {
+        id: 6,
+        question: "6. 陳澄波描繪家鄉街景時，畫面常出現的重要嘉義市地標為何？",
+        options: ["嘉義火車站", "中央噴水池與遠方的玉山", "北門驛", "阿里山神木"],
+        answer: 1,
+        explanation: "陳澄波多幅描繪嘉義市街景的作品均以噴水池圓環為視覺核心，背景遠方常可望見象徵臺灣精神的巍峨玉山。"
+      },
+      {
+        id: 7,
+        question: "7. 在陳澄波受難後，是誰在動盪艱困的環境中冒險將其作品一件件完好保存下來，使臺灣現代美術史得以留下珍貴典範？",
+        options: ["其夫人張捷女士", "嘉義市立美術館", "帝國美術院", "國立臺灣美術館館長"],
+        answer: 0,
+        explanation: "夫人張捷女士在動盪年代冒險藏匿與悉心修復畫作，使得陳澄波的大量遺作得以完整流傳至今。"
+      },
+      {
+        id: 8,
+        question: "8. 針對陳澄波畫作中看似緊密交疊、順著地勢起伏的房舍建築，反映了臺灣文化的何種空間特色？",
+        options: [
+          "嚴格對稱的幾何規劃",
+          "亂中有序、順應自然山形與生活動態的有機生命力",
+          "毫無章法的隨意塗鴉",
+          "照搬西方古典都市建築藍圖"
+        ],
+        answer: 1,
+        explanation: "陳澄波筆下的聚落建築順應地形錯落起伏，體現了臺灣常民生活亂中有序、緊密相依的生命力與人文關懷。"
+      },
+      {
+        id: 9,
+        question: "9. 陳澄波的作品風格通常融合了西方印象派/野獸派的強烈筆觸，以及哪一種東方美學特質？",
+        options: [
+          "傳統水墨的氣韻生動與濃烈質樸的鄉土情感",
+          "日本浮世繪的精密工筆線條",
+          "院體畫的嚴格寫實",
+          "觀念藝術的冷靜裝置"
+        ],
+        answer: 0,
+        explanation: "陳澄波將西方油彩的厚重筆觸與色彩，融合了東方書畫線條的氣韻律動與質樸熱烈的情感。"
+      },
+      {
+        id: 10,
+        question: "10. 綜觀陳澄波的創作歷程，其核心藝術信念主要為何？",
+        options: [
+          "純粹為了商業買賣與迎合市場喜好",
+          "追求完美精確的相機式寫實模仿",
+          "真誠地將個人感情、土地關懷與文化思維化為藝術結晶",
+          "完全屏除個人情感，僅記錄客觀數據"
+        ],
+        answer: 2,
+        explanation: "藝術家以真誠的土地之愛與生命思維進行創作，展現超越單純視覺模仿的深層文化認同。"
+      }
+    ];
+
+    let currentChenIndex = 0;
+    let chenScore = 0;
+    let userChenAnswers = new Array(10).fill(null);
+    let answeredChen = false;
+
+    function initChenQuiz() {
+      currentChenIndex = 0;
+      chenScore = 0;
+      userChenAnswers = new Array(10).fill(null);
+      answeredChen = false;
+      
+      document.getElementById('chen-quiz-body').classList.remove('hidden');
+      document.getElementById('chen-quiz-header').classList.remove('hidden');
+      document.getElementById('chen-quiz-result-view').classList.add('hidden');
+      
+      renderChenQuestion();
+    }
+
+    function renderChenQuestion() {
+      answeredChen = false;
+      const q = chenQuizData[currentChenIndex];
+
+      document.getElementById('chen-quiz-progress-text').innerText = `題目 ${currentChenIndex + 1} / ${chenQuizData.length}`;
+      document.getElementById('chen-quiz-progress-bar').style.width = `${((currentChenIndex + 1) / chenQuizData.length) * 100}%`;
+      document.getElementById('chen-quiz-score-badge').innerText = `得分: ${chenScore}`;
+
+      document.getElementById('chen-quiz-question-title').innerText = q.question;
+
+      const optionsContainer = document.getElementById('chen-quiz-options');
+      optionsContainer.innerHTML = '';
+
+      const optionLabels = ['A', 'B', 'C', 'D'];
+      q.options.forEach((optText, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'w-full text-left p-4 rounded-2xl bg-sand/40 border border-gold/30 hover:bg-goldlight/60 hover:border-gold transition-all font-sans text-xs sm:text-sm text-gray-800 flex items-start gap-3 group';
+        btn.onclick = () => selectChenOption(idx);
+
+        btn.innerHTML = `
+          <span class="w-6 h-6 rounded-full bg-white text-ink font-bold text-xs flex items-center justify-center border border-gold/40 shrink-0 group-hover:bg-crimson group-hover:text-white transition-colors">
+            ${optionLabels[idx]}
+          </span>
+          <span class="leading-relaxed font-medium pt-0.5">${optText}</span>
+        `;
+        optionsContainer.appendChild(btn);
+      });
+
+      document.getElementById('chen-quiz-explanation-box').classList.add('hidden');
+      const nextBtn = document.getElementById('chen-quiz-next-btn');
+      nextBtn.disabled = true;
+      nextBtn.className = 'px-6 py-2.5 rounded-xl bg-gray-300 text-gray-500 font-serif-title text-xs font-bold transition-all cursor-not-allowed flex items-center gap-1';
+      nextBtn.innerText = (currentChenIndex === chenQuizData.length - 1) ? '查看最終成績結果 ➔' : '下一題 ➔';
+    }
+
+    function selectChenOption(selectedIdx) {
+      if (answeredChen) return;
+      answeredChen = true;
+
+      const q = chenQuizData[currentChenIndex];
+      const isCorrect = (selectedIdx === q.answer);
+      userChenAnswers[currentChenIndex] = selectedIdx;
+
+      if (isCorrect) {
+        chenScore += 10;
+        document.getElementById('chen-quiz-score-badge').innerText = `得分: ${chenScore}`;
+      }
+
+      const optionBtns = document.getElementById('chen-quiz-options').children;
+      Array.from(optionBtns).forEach((btn, idx) => {
+        btn.disabled = true;
+        btn.classList.remove('hover:bg-goldlight/60', 'hover:border-gold', 'cursor-pointer');
+        btn.classList.add('cursor-default');
+
+        if (idx === q.answer) {
+          btn.className = 'w-full text-left p-4 rounded-2xl bg-emerald-50 border-2 border-emerald-500 text-emerald-900 font-sans text-xs sm:text-sm flex items-start gap-3 shadow-sm';
+        } else if (idx === selectedIdx && !isCorrect) {
+          btn.className = 'w-full text-left p-4 rounded-2xl bg-rose-50 border-2 border-rose-500 text-rose-900 font-sans text-xs sm:text-sm flex items-start gap-3 shadow-sm';
+        } else {
+          btn.classList.add('opacity-50');
+        }
+      });
+
+      const expBox = document.getElementById('chen-quiz-explanation-box');
+      const resultTitle = document.getElementById('chen-quiz-result-title');
+      const expText = document.getElementById('chen-quiz-explanation-text');
+
+      expBox.classList.remove('hidden');
+      if (isCorrect) {
+        expBox.className = 'p-5 rounded-2xl border border-emerald-300 bg-emerald-50/60 space-y-1.5';
+        resultTitle.className = 'font-serif-title font-bold text-sm text-emerald-800 flex items-center gap-1.5';
+        resultTitle.innerHTML = '✅ 答對了！美學觀點精準！';
+      } else {
+        expBox.className = 'p-5 rounded-2xl border border-rose-300 bg-rose-50/60 space-y-1.5';
+        resultTitle.className = 'font-serif-title font-bold text-sm text-rose-800 flex items-center gap-1.5';
+        resultTitle.innerHTML = `❌ 答錯了！正確解答為：【${['A','B','C','D'][q.answer]}】${q.options[q.answer]}`;
+      }
+      expText.innerHTML = `<strong>💡 知識詳解：</strong>${q.explanation}`;
+
+      const nextBtn = document.getElementById('chen-quiz-next-btn');
+      nextBtn.disabled = false;
+      nextBtn.className = 'px-6 py-2.5 rounded-xl bg-crimson hover:bg-crimson/90 text-white font-serif-title text-xs font-bold shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center gap-1';
+    }
+
+    function nextChenQuestion() {
+      if (currentChenIndex < chenQuizData.length - 1) {
+        currentChenIndex++;
+        renderChenQuestion();
+      } else {
+        showChenResult();
+      }
+    }
+
+    function showChenResult() {
+      document.getElementById('chen-quiz-body').classList.add('hidden');
+      document.getElementById('chen-quiz-header').classList.add('hidden');
+      
+      const resultView = document.getElementById('chen-quiz-result-view');
+      resultView.classList.remove('hidden');
+
+      document.getElementById('chen-quiz-final-score').innerHTML = `${chenScore} <span class="text-sm font-normal text-gray-500">/ 100 分</span>`;
+      document.getElementById('chen-quiz-final-correct').innerText = `答對 ${chenScore / 10} / 10 題`;
+
+      const badgeEl = document.getElementById('chen-quiz-title-badge');
+      const descEl = document.getElementById('chen-quiz-title-desc');
+
+      if (chenScore === 100) {
+        badgeEl.innerText = '🌟 帝展大師級賞析家';
+        descEl.innerText = '完美通關！您對陳澄波先生的藝術風格、視覺恆定性與生命故事有著大師級的深刻理解！';
+      } else if (chenScore >= 80) {
+        badgeEl.innerText = '🎨 熱情南國美學探索者';
+        descEl.innerText = '非常優秀！您十分熟悉臺灣前輩畫家的土地情感、紅綠色彩與常民空間思維！';
+      } else if (chenScore >= 60) {
+        badgeEl.innerText = '🌱 美學學習新星';
+        descEl.innerText = '表現良好！您已掌握陳澄波畫作的核心特徵與文化意象，繼續探索會更有收穫！';
+      } else {
+        badgeEl.innerText = '🔍 土地美學初學者';
+        descEl.innerText = '建議回到「三年級 帝展榮光」單元重新鑑賞畫作與藝術史背景，體驗南國色彩的魅力！';
+      }
+    }
+
+    function restartChenQuiz() {
+      initChenQuiz();
+    }
+
+    function copyChenQuizResult() {
+      const correctCount = chenScore / 10;
+      const badge = document.getElementById('chen-quiz-title-badge').innerText;
+      const report = `【嘉義市大同國小 藝術才能班 ‧ 陳澄波美學闖關測驗報告】
+得分：${chenScore} / 100 分 (答對 ${correctCount}/10 題)
+成就稱號：${badge}
+網址預覽：http://localhost:8080/#chen-quiz`;
+
+      navigator.clipboard.writeText(report).then(() => {
+        alert('✅ 成績報告已複製到剪貼簿！');
+      }).catch(() => {
+        alert('報告內容：\n\n' + report);
+      });
+    }
+
+    // Auto init quiz on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      if (document.getElementById('chen-quiz-question-title')) {
+        initChenQuiz();
+      }
+    });
+  </script>
+</body>
+</html>
