@@ -139,11 +139,12 @@
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center space-x-5 font-serif-title font-medium text-sm text-gray-700">
+        <nav class="hidden lg:flex items-center space-x-4 font-serif-title font-medium text-xs sm:text-sm text-gray-700">
           <a href="#roadmap" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">6道縱向地圖</a>
           <a href="#orientations" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">全人教育3取向</a>
-          <a href="#courses" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">年級課程單元</a>
+          <a href="#courses" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">年級單元</a>
           <a href="#chen-quiz" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson font-bold text-amber-800">🎨 陳澄波測驗</a>
+          <a href="#lin-quiz" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson font-bold text-emerald-800">🌾 林玉山測驗</a>
           <a href="#assessment" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">雙軌評量特色</a>
           <a href="#quiz-section" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson font-bold text-crimson">🎯 實務自評測驗</a>
           <a href="#posters" class="hover:text-crimson transition-colors py-2 border-b-2 border-transparent hover:border-crimson">海報圖檔特展</a>
@@ -972,6 +973,119 @@
               🔄 重新挑戰測驗
             </button>
             <button onclick="copyChenQuizResult()" class="px-6 py-3 rounded-xl bg-sand hover:bg-goldlight text-ink border border-gold/50 font-serif-title text-xs font-bold transition-all flex items-center gap-2">
+              📋 複製成績報告
+            </button>
+          </div>
+        </div>
+
+        <div class="golden-line"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3.6: LIN YU-SHAN AESTHETICS & ECO-ART QUIZ MODULE -->
+  <section id="lin-quiz" class="py-20 bg-sand/50 relative border-t border-gold/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center space-y-3 mb-12">
+        <div class="inline-block px-3 py-1 rounded-full bg-white border border-gold/40 text-xs font-serif-title text-emerald-800 font-bold">
+          National Treasure Art History Quiz
+        </div>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-ink">
+          🌾 林玉山生態美學與國寶畫作隨堂測驗
+        </h2>
+        <p class="text-gray-600 text-sm max-w-2xl mx-auto leading-relaxed">
+          透過 10 道精選結構化題目，探索「台展三少」林玉山大師的國寶《蓮池》、金粉敷染技法、水牛寫生與自然生態觀察力！
+        </p>
+      </div>
+
+      <!-- Quiz Card Container -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border-2 border-gold/40 relative overflow-hidden space-y-8">
+        <div class="golden-line"></div>
+
+        <!-- Quiz Progress Bar & Header -->
+        <div id="lin-quiz-header" class="flex items-center justify-between border-b border-sand pb-4">
+          <div class="flex items-center gap-2">
+            <span class="ink-stamp text-emerald-800 border-emerald-800 px-2.5 py-0.5 text-xs font-bold">國寶美學</span>
+            <span id="lin-quiz-progress-text" class="text-xs font-serif-title font-bold text-gray-700">題目 1 / 10</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-32 sm:w-48 h-2.5 bg-sand rounded-full overflow-hidden">
+              <div id="lin-quiz-progress-bar" class="h-full bg-emerald-700 rounded-full transition-all duration-300" style="width: 10%"></div>
+            </div>
+            <span id="lin-quiz-score-badge" class="text-xs font-bold text-emerald-800 font-mono bg-emerald-100 px-2 py-0.5 rounded-md">得分: 0</span>
+          </div>
+        </div>
+
+        <!-- Question Body Area (Question View) -->
+        <div id="lin-quiz-body" class="space-y-6">
+          <h3 id="lin-quiz-question-title" class="font-serif-title text-lg sm:text-xl font-bold text-ink leading-relaxed">
+            1. 載入中...
+          </h3>
+
+          <!-- Options Grid -->
+          <div id="lin-quiz-options" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Options dynamically rendered by JS -->
+          </div>
+
+          <!-- Feedback & Explanation Box (Initially Hidden) -->
+          <div id="lin-quiz-explanation-box" class="hidden p-5 rounded-2xl border transition-all space-y-2">
+            <div id="lin-quiz-result-title" class="font-serif-title font-bold text-sm">
+              <!-- Result Icon & Title -->
+            </div>
+            <p id="lin-quiz-explanation-text" class="text-xs text-gray-700 leading-relaxed">
+              <!-- Explanation text -->
+            </p>
+          </div>
+
+          <!-- Bottom Action Buttons -->
+          <div class="flex justify-end pt-4 border-t border-sand">
+            <button id="lin-quiz-next-btn" onclick="nextLinQuestion()" disabled class="px-6 py-2.5 rounded-xl bg-gray-300 text-gray-500 font-serif-title text-xs font-bold transition-all cursor-not-allowed flex items-center gap-1">
+              下一題 &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Final Results Area (Result View - Initially Hidden) -->
+        <div id="lin-quiz-result-view" class="hidden text-center space-y-8 py-6">
+          <div class="inline-block w-20 h-20 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-4xl font-black mx-auto ring-4 ring-emerald-200">
+            🌾
+          </div>
+
+          <div class="space-y-2">
+            <div class="text-xs font-serif-title font-bold text-gold uppercase tracking-widest">Quiz Completed</div>
+            <h3 class="font-serif-title text-3xl font-bold text-ink">測驗完成！成績結算</h3>
+          </div>
+
+          <!-- Score Card -->
+          <div class="bg-sand/40 p-6 rounded-2xl border border-gold/30 max-w-md mx-auto space-y-3">
+            <div class="text-xs text-gray-500 font-serif-title">您的最終得分</div>
+            <div id="lin-quiz-final-score" class="text-5xl font-black text-emerald-800 font-serif-title">
+              100 <span class="text-sm font-normal text-gray-500">/ 100 分</span>
+            </div>
+            <div id="lin-quiz-final-correct" class="text-xs text-gray-600 font-bold">
+              答對 10 / 10 題
+            </div>
+            
+            <div class="pt-3 border-t border-gold/20">
+              <div class="text-xs font-bold text-amber-800 mb-1">獲得成就稱號：</div>
+              <div id="lin-quiz-title-badge" class="font-serif-title font-black text-lg text-amber-900 bg-amber-100/80 px-4 py-1.5 rounded-xl inline-block border border-amber-300">
+                🌟 國寶級蓮池生態大師
+              </div>
+              <p id="lin-quiz-title-desc" class="text-xs text-gray-600 mt-2 px-4 leading-relaxed">
+                您對林玉山先生的生態觀察、金箔寫生技法與國寶作品有著國寶級的完美理解！
+              </p>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap justify-center gap-4 pt-2">
+            <button onclick="restartLinQuiz()" class="px-6 py-3 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-serif-title text-xs font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+              🔄 重新挑戰測驗
+            </button>
+            <button onclick="copyLinQuizResult()" class="px-6 py-3 rounded-xl bg-sand hover:bg-goldlight text-ink border border-gold/50 font-serif-title text-xs font-bold transition-all flex items-center gap-2">
               📋 複製成績報告
             </button>
           </div>
@@ -2722,10 +2836,297 @@ ${reflect2}
       });
     }
 
+    // ==========================================
+    // LIN YU-SHAN INTERACTIVE QUIZ MODULE LOGIC
+    // ==========================================
+    const linQuizData = [
+      {
+        id: 1,
+        question: "1. 1927 年第一回臺灣美術展覽會（台展）東洋畫部中，有三位臺灣年輕畫家一舉入選，被譽為「台展三少」。請問是哪三位畫家？",
+        options: [
+          "陳澄波、廖繼春、顏水龍",
+          "林玉山、郭雪湖、陳進",
+          "黃土水、李梅樹、楊三郎",
+          "林玉山、席德進、袁金塔"
+        ],
+        answer: 1,
+        explanation: "台展三少為林玉山、郭雪湖與陳進，象徵臺灣本土新世代東洋畫（膠彩）家的崛起。"
+      },
+      {
+        id: 2,
+        question: "2. 林玉山的國寶級經典傳世巨作《蓮池》（1930年獲台展特選），其寫生地點取自哪一個地方的風土景致？",
+        options: [
+          "嘉義牛稠山（牛稠溪一帶）",
+          "臺南安平運河",
+          "臺北圓山植物園",
+          "臺中日月潭"
+        ],
+        answer: 0,
+        explanation: "林玉山是在嘉義北邊的「牛稠山」荷花池進行實地觀察與寫生。"
+      },
+      {
+        id: 3,
+        question: "3. 林玉山為了創作《蓮池》，特地在清晨三、四點起床趕到荷花池邊，他最想要捕捉並傳達的是什麼自然感知？",
+        options: [
+          "荷葉上的朝露水珠",
+          "清晨天剛亮時，蓮花瓣瞬間綻放的「剝剝」聲響與生命靈感",
+          "夜晚青蛙跳水的波紋",
+          "荷花池旁農夫耕作的身影"
+        ],
+        answer: 1,
+        explanation: "林玉山清晨前往荷花池，是為了感受並捕捉第一道晨光下蓮花綻開的聲響與動態生機。"
+      },
+      {
+        id: 4,
+        question: "4. 在《蓮池》的畫面中呈現出如朝陽映照般耀眼溫暖的金色氛圍，林玉山主要運用了哪種材料技法？",
+        options: [
+          "純壓克力螢光漆",
+          "進口西洋油彩厚塗",
+          "金粉與泥金（純金、青金、水金色等）的敷染及金箔技法",
+          "蠟筆阻擋技法"
+        ],
+        answer: 2,
+        explanation: "林玉山為了呈現紅土與晨曦的金黃感，大量使用了純金、青金、水金色等多種金粉敷染與金箔鋪陳。"
+      },
+      {
+        id: 5,
+        question: "5. 仔細觀察《蓮池》這幅畫，除了盛開的荷花與白鷺鷥之外，畫面左下方還隱藏著什麼生動的生態細節？",
+        options: [
+          "幾隻正在荷葉下悠游的小魚",
+          "水面上的蜻蜓在產卵",
+          "停在荷葉上的綠繡眼",
+          "正在泥巴裡爬行的小螃蟹"
+        ],
+        answer: 0,
+        explanation: "在白鷺鷥駐足凝視的水面下方，畫家精準描繪了數隻浮游的小魚，展現其敏銳的生態微觀觀察力。"
+      },
+      {
+        id: 6,
+        question: "6. 從林玉山早期作品《梅蘭竹菊》（四幅屏）可以看出，林玉山在青年時期便奠定了哪種深厚的藝術底子？",
+        options: [
+          "古典寫實油畫",
+          "傳統文人水墨筆墨線條與「詩、書、畫」合一的造詣",
+          "雕塑與陶藝拉胚",
+          "西方現代抽象構成"
+        ],
+        answer: 1,
+        explanation: "林玉山早年臨摹與水墨訓練扎實，青年時期的《梅蘭竹菊》四幅屏即展現其俐落筆墨與詩書畫造詣。"
+      },
+      {
+        id: 7,
+        question: "7. 林玉山 1939 年的水墨設色作品《夜兔》中，展現了日本「圓山四條派」的哪一種技法特色？",
+        options: [
+          "幾何立體分割",
+          "結合東方水墨筆線與西方明暗光影／立體感的中西交融畫法",
+          "潑墨抽象山水",
+          "漫畫線條符號化"
+        ],
+        answer: 1,
+        explanation: "《夜兔》融合了寫意筆觸與柔和的光影漸層立體感，展現圓山四條派兼顧東西方融合的繪畫風格。"
+      },
+      {
+        id: 8,
+        question: "8. 在 1941 年入選府展的屏風作品《雙牛圖》中，林玉山在物資匱乏的二戰時期展現了什麼創作智慧？",
+        options: [
+          "改用廢棄木板刻版畫",
+          "用一張張粗紙手工拼接黏貼成屏風基底材，並自製研發礦物顏料",
+          "使用報紙撕貼拼貼",
+          "借用學校黑板作畫"
+        ],
+        answer: 1,
+        explanation: "《雙牛圖》是林玉山在物資貧乏之際，以粗紙拼貼成大屏風基底並自行研發調製顏料完成的代表作。"
+      },
+      {
+        id: 9,
+        question: "9. 在 1944 年作品《歸途》（描繪農婦牽著水牛回家）中，林玉山特別在哪個部分下了細膩深情的刻畫？",
+        options: [
+          "農婦頭上的斗笠編織紋路",
+          "水牛精細的毛流與溫潤有神的一雙「牛眼」",
+          "背景豐富的山林色彩",
+          "地上的農具細節"
+        ],
+        answer: 1,
+        explanation: "林玉山以留白背景襯托人物與牛的互動，特別將牛毛的質感與牛眼睛畫得栩栩如生且溫柔動人。"
+      },
+      {
+        id: 10,
+        question: "10. 在林玉山作品《曉霜》（1942年）中，畫家在白霜寒竹間描繪了一隻回眸的貓頭鷹，其用色調性與文化意象為何？",
+        options: [
+          "大紅大紫的熱鬧慶典氛圍",
+          "以淡雅單純的「灰白色調」營造靜謐悠閒氣息，並結合象徵福氣的吉祥寓意",
+          "強烈對比的黑白塗鴉風格",
+          "金碧輝煌的宮廷重彩"
+        ],
+        answer: 1,
+        explanation: "《曉霜》以極簡高雅的灰白色調描繪竹林霜景，貓頭鷹造型溫和，蘊含平安幸福的祥瑞寄託。"
+      }
+    ];
+
+    let currentLinIndex = 0;
+    let linScore = 0;
+    let userLinAnswers = new Array(10).fill(null);
+    let answeredLin = false;
+
+    function initLinQuiz() {
+      currentLinIndex = 0;
+      linScore = 0;
+      userLinAnswers = new Array(10).fill(null);
+      answeredLin = false;
+      
+      document.getElementById('lin-quiz-body').classList.remove('hidden');
+      document.getElementById('lin-quiz-header').classList.remove('hidden');
+      document.getElementById('lin-quiz-result-view').classList.add('hidden');
+      
+      renderLinQuestion();
+    }
+
+    function renderLinQuestion() {
+      answeredLin = false;
+      const q = linQuizData[currentLinIndex];
+
+      document.getElementById('lin-quiz-progress-text').innerText = `題目 ${currentLinIndex + 1} / ${linQuizData.length}`;
+      document.getElementById('lin-quiz-progress-bar').style.width = `${((currentLinIndex + 1) / linQuizData.length) * 100}%`;
+      document.getElementById('lin-quiz-score-badge').innerText = `得分: ${linScore}`;
+
+      document.getElementById('lin-quiz-question-title').innerText = q.question;
+
+      const optionsContainer = document.getElementById('lin-quiz-options');
+      optionsContainer.innerHTML = '';
+
+      const optionLabels = ['A', 'B', 'C', 'D'];
+      q.options.forEach((optText, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'w-full text-left p-4 rounded-2xl bg-sand/40 border border-gold/30 hover:bg-goldlight/60 hover:border-gold transition-all font-sans text-xs sm:text-sm text-gray-800 flex items-start gap-3 group';
+        btn.onclick = () => selectLinOption(idx);
+
+        btn.innerHTML = `
+          <span class="w-6 h-6 rounded-full bg-white text-ink font-bold text-xs flex items-center justify-center border border-gold/40 shrink-0 group-hover:bg-emerald-800 group-hover:text-white transition-colors">
+            ${optionLabels[idx]}
+          </span>
+          <span class="leading-relaxed font-medium pt-0.5">${optText}</span>
+        `;
+        optionsContainer.appendChild(btn);
+      });
+
+      document.getElementById('lin-quiz-explanation-box').classList.add('hidden');
+      const nextBtn = document.getElementById('lin-quiz-next-btn');
+      nextBtn.disabled = true;
+      nextBtn.className = 'px-6 py-2.5 rounded-xl bg-gray-300 text-gray-500 font-serif-title text-xs font-bold transition-all cursor-not-allowed flex items-center gap-1';
+      nextBtn.innerText = (currentLinIndex === linQuizData.length - 1) ? '查看最終成績結果 ➔' : '下一題 ➔';
+    }
+
+    function selectLinOption(selectedIdx) {
+      if (answeredLin) return;
+      answeredLin = true;
+
+      const q = linQuizData[currentLinIndex];
+      const isCorrect = (selectedIdx === q.answer);
+      userLinAnswers[currentLinIndex] = selectedIdx;
+
+      if (isCorrect) {
+        linScore += 10;
+        document.getElementById('lin-quiz-score-badge').innerText = `得分: ${linScore}`;
+      }
+
+      const optionBtns = document.getElementById('lin-quiz-options').children;
+      Array.from(optionBtns).forEach((btn, idx) => {
+        btn.disabled = true;
+        btn.classList.remove('hover:bg-goldlight/60', 'hover:border-gold', 'cursor-pointer');
+        btn.classList.add('cursor-default');
+
+        if (idx === q.answer) {
+          btn.className = 'w-full text-left p-4 rounded-2xl bg-emerald-50 border-2 border-emerald-500 text-emerald-900 font-sans text-xs sm:text-sm flex items-start gap-3 shadow-sm';
+        } else if (idx === selectedIdx && !isCorrect) {
+          btn.className = 'w-full text-left p-4 rounded-2xl bg-rose-50 border-2 border-rose-500 text-rose-900 font-sans text-xs sm:text-sm flex items-start gap-3 shadow-sm';
+        } else {
+          btn.classList.add('opacity-50');
+        }
+      });
+
+      const expBox = document.getElementById('lin-quiz-explanation-box');
+      const resultTitle = document.getElementById('lin-quiz-result-title');
+      const expText = document.getElementById('lin-quiz-explanation-text');
+
+      expBox.classList.remove('hidden');
+      if (isCorrect) {
+        expBox.className = 'p-5 rounded-2xl border border-emerald-300 bg-emerald-50/60 space-y-1.5';
+        resultTitle.className = 'font-serif-title font-bold text-sm text-emerald-800 flex items-center gap-1.5';
+        resultTitle.innerHTML = '✅ 答對了！美學與生態觀察力精準！';
+      } else {
+        expBox.className = 'p-5 rounded-2xl border border-rose-300 bg-rose-50/60 space-y-1.5';
+        resultTitle.className = 'font-serif-title font-bold text-sm text-rose-800 flex items-center gap-1.5';
+        resultTitle.innerHTML = `❌ 答錯了！正確解答為：【${['A','B','C','D'][q.answer]}】${q.options[q.answer]}`;
+      }
+      expText.innerHTML = `<strong>💡 知識詳解：</strong>${q.explanation}`;
+
+      const nextBtn = document.getElementById('lin-quiz-next-btn');
+      nextBtn.disabled = false;
+      nextBtn.className = 'px-6 py-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-serif-title text-xs font-bold shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center gap-1';
+    }
+
+    function nextLinQuestion() {
+      if (currentLinIndex < linQuizData.length - 1) {
+        currentLinIndex++;
+        renderLinQuestion();
+      } else {
+        showLinResult();
+      }
+    }
+
+    function showLinResult() {
+      document.getElementById('lin-quiz-body').classList.add('hidden');
+      document.getElementById('lin-quiz-header').classList.add('hidden');
+      
+      const resultView = document.getElementById('lin-quiz-result-view');
+      resultView.classList.remove('hidden');
+
+      document.getElementById('lin-quiz-final-score').innerHTML = `${linScore} <span class="text-sm font-normal text-gray-500">/ 100 分</span>`;
+      document.getElementById('lin-quiz-final-correct').innerText = `答對 ${linScore / 10} / 10 題`;
+
+      const badgeEl = document.getElementById('lin-quiz-title-badge');
+      const descEl = document.getElementById('lin-quiz-title-desc');
+
+      if (linScore === 100) {
+        badgeEl.innerText = '🌟 國寶級蓮池生態大師';
+        descEl.innerText = '完美通關！您對林玉山先生的生態觀察、金箔寫生技法與國寶作品有著國寶級的深刻理解！';
+      } else if (linScore >= 80) {
+        badgeEl.innerText = '🎨 諸羅自然寫生探索者';
+        descEl.innerText = '非常優秀！您十分熟悉台展三少的崛起歷史、膠彩金粉敷染與水牛生命力！';
+      } else if (linScore >= 60) {
+        badgeEl.innerText = '🌱 美學自然觀察員';
+        descEl.innerText = '表現良好！您已掌握林玉山畫作的核心特徵與自然寫生思維，繼續探索會更有收穫！';
+      } else {
+        badgeEl.innerText = '🔍 生態美學初學者';
+        descEl.innerText = '建議回到「四年級 水牛群像與諸羅生態」單元重新鑑賞畫作與自然寫生背景，感受自然的魅力！';
+      }
+    }
+
+    function restartLinQuiz() {
+      initLinQuiz();
+    }
+
+    function copyLinQuizResult() {
+      const correctCount = linScore / 10;
+      const badge = document.getElementById('lin-quiz-title-badge').innerText;
+      const report = `【嘉義市大同國小 藝術才能班 ‧ 林玉山美學闖關測驗報告】
+得分：${linScore} / 100 分 (答對 ${correctCount}/10 題)
+成就稱號：${badge}
+網址預覽：https://kaoyuchuan520-cmd.github.io/art-curriculum/#lin-quiz`;
+
+      navigator.clipboard.writeText(report).then(() => {
+        alert('✅ 成績報告已複製到剪貼簿！');
+      }).catch(() => {
+        alert('報告內容：\n\n' + report);
+      });
+    }
+
     // Auto init quiz on page load
     document.addEventListener('DOMContentLoaded', () => {
       if (document.getElementById('chen-quiz-question-title')) {
         initChenQuiz();
+      }
+      if (document.getElementById('lin-quiz-question-title')) {
+        initLinQuiz();
       }
     });
   </script>
